@@ -2,9 +2,10 @@
 
 ##Develop
 
-1. Replace meta-data in boilerwind.php with your data
-2. Run npm run start
-3. Edit the edit.js block
+1. Copy boilerwind folder
+2. Replace meta-data in boilerwind.php with your data
+3. Run npm run start
+4. Edit the edit.js block
 
 ## When done
 
