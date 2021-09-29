@@ -6,6 +6,31 @@
 
 A collaborative mission to update the website for Ruben Steinerskolan in Göteborg.
 
+## :man_factory_worker: Backlog
+
+**General:**
+
+- [ ] Front page with paralax or image sequences.
+- [ ] Footer menu with placeholder icons.
+- [ ] Template for "Ansökan".
+- [ ] Template for "Evenemang".
+- [ ] Template for "Föräldrar".
+- [ ] Template for "Kontakt".
+- [ ] Template for "Om Oss".
+
+**Gutenberg Block ideas:**
+
+- [ ] CSS clip path/SVG blob som kan implementeras till att skriva text ovanpå.
+- [ ] Ipsum
+- [ ] Lorem
+
+**Domain:**
+
+- [ ] Add the school's texts.
+- [ ] Implement (new) logo.
+- [ ] Implement custom blocks from plugins.
+- [ ] Relevant image and database content.
+
 ## :pushpin: Instructions
 
 After cloning down the directory do the following:
@@ -78,10 +103,20 @@ _Save your changes and publish._
 
 Choose the following:
 
-- [x] Custom structure
+- [x] Custom structure.
 - Within the input field choose `%postname%`.
 
 _Save your changes._
+
+_**Optional: In Settings -> General.**_
+
+- Set "Site Title" to "Rudolf Steinerskolan i Göteborg".
+- Set "Tagline" to:
+  > "Rudolf Steinerskolan i Göteborg är en waldorfskola med cirka 230 elever från förskoleklass upp till klass 9. Skolan grundades 1965 och erbjuder idag undervisning i egna vackra lokaler på Tallhöjdsgatan i Torpa."
+- In "Timezone" switch to "Stockholm".
+- Next to "Date Format" choose "Custom" and type "j F Y".
+- In "Time Format" switch to `H:i`.
+- _Extra optional: If you're not debugging/working change "Site Language" to "Svenska"._
 
 ---
 

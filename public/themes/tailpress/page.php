@@ -1,16 +1,6 @@
-<!-- -->
+<!-- Default page for every menu item that doesn't have a specified template.  -->
 <?php get_header(); ?>
 
-<?php if (have_posts()): ?>
+<?php the_content(); ?>
 
-    <?php while (have_posts()): the_post(); ?>
-
-    <h1><?php the_title(); ?></h1>
-
-    <?php the_content(); ?>
-
-    <?php endwhile; ?>
-
-    <?php endif; ?>
-
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
