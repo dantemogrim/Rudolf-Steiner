@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="<?= get_theme_file_uri('assets/app.css') ?>">
   <?php wp_head(); ?>
 </head>
+<!-- Body background color. -->
 <body class="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500">
 <?php wp_body_open(); ?>
 <?php $menuItems = wp_get_nav_menu_items('menu-bar'); ?>

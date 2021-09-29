@@ -20,7 +20,7 @@ A collaborative mission to update the website for Ruben Steinerskolan in Götebo
 
 **Gutenberg Block ideas:**
 
-- [ ] CSS clip path/SVG blob som kan implementeras till att skriva text ovanpå.
+- [ ] CSS clip path/SVG blob where the user can type text on top.
 - [ ] Ipsum
 - [ ] Lorem
 
@@ -117,6 +117,16 @@ _**Optional: In Settings -> General.**_
 - Next to "Date Format" choose "Custom" and type "j F Y".
 - In "Time Format" switch to `H:i`.
 - _Extra optional: If you're not debugging/working change "Site Language" to "Svenska"._
+
+_**Extra: Developer & Tailwind CSS specific color palette:**_
+
+- Blue = `light-blue-700`
+- Light Blue = `blue-50`
+- Light Green = `light-green-100`
+- Navy = `light-blue-900`
+- Orange = `orange-200`
+- Pinkish Grey = `red-100`
+- Yellow = `yellow-200`
 
 ---
 
