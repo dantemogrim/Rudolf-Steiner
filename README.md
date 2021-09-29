@@ -2,13 +2,11 @@
 
 # Rudolf Steiner
 
-## Info
+## :school: Info
 
 A collaborative mission to update the website for Ruben Steinerskolan in Göteborg.
 
----
-
-## Instructions
+## :pushpin: Instructions
 
 After cloning down the directory do the following:
 
@@ -35,14 +33,15 @@ From the root folder, start up a local server with:
 
 ---
 
-## WordPress Settings
+## :globe_with_meridians: WordPress Settings
 
 Once you have your localhost up and running and passed sign up or login, set these changes from your Dashboard to get a better idea on how this project is structured:
-_Can't find Dashboard? In your URL type: `localhost:8000/wp-admin`_.
+
+> _Can't find Dashboard? In your URL type: `localhost:8000/wp-admin`_.
 
 ### Menu
 
-Start by creating the following pages:
+**Start by creating the following pages:**
 
 - Aktuellt
 - Ansökan
@@ -50,38 +49,43 @@ Start by creating the following pages:
 - Föräldrar
 - Hem
 - Om Oss
-  _Don't forget to publish these one by one._
 
-Then go to Settings -> Reading
+_Don't forget to publish these one by one._
+
+**Then go to Appearence -> Menus (or Customize)**
 
 Create a new menu and give it the name `menu-bar`.
 Then under menu settings check the following boxes:
 
-- [x] "Auto add pages"
-- [x] "Display location"
-      _Save your changes and publish._
+- [x] "Automatically add new top-level pages to this menu"
+- [x] "Navigation"
 
-Add the following settings:
-"Your homepage displays"
+_Save your changes and publish._
 
-- A static page.
-- Homepage: Hem
-- Posts page: Aktuellt
-  _Save your changes and publish._
+**Then go to Settings -> Reading**
 
-## Links
+Within the "Your homepage displays" options do the following:
 
-Correct links by going to Settings -> Permalinks.
+- Check the box for "A static page (select below)".
+- Select "Homepage" as "Hem".
+- Select "Posts page" as "Aktuellt".
+
+_Save your changes and publish._
+
+### Links
+
+**Correct links by going to Settings -> Permalinks.**
 
 Choose the following:
 
 - [x] Custom structure
 - Within the input field choose `%postname%`.
-  _Save your changes._
+
+_Save your changes._
 
 ---
 
-## Tools
+## :clamp: Tools
 
 - [Gutenberg](https://github.com/WordPress/gutenberg): for creating custom blocks.
 - [Tailwind CSS](https://tailwindcss.com/): styling.
@@ -90,7 +94,7 @@ Choose the following:
 
 ---
 
-## Creators
+## :man_technologist: Creators
 
 - [Dante Mogrim](https://github.com/dantemogrim)
 - [Erik White](https://github.com/nausea87)
@@ -98,6 +102,6 @@ Choose the following:
 
 ---
 
-## License
+## :label: License
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
