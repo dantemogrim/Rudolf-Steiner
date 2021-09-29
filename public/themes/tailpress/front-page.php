@@ -23,16 +23,13 @@
 				<a href="<?php the_permalink(); ?>"><h4 class="text-xl font-semibold"><?php the_title(); ?></h4></a>
 				<p class="text-sm"><?php the_excerpt(); ?></p>
 
-                <p class="text-indigo-500"><?php the_date(); ?></p>
+                <p class="text-blue-700"><?php the_date(); ?></p>
                 <!-- Link to single post or post.php.-->
-                <a href="<?php the_permalink(); ?>" class="p-2 leading-none rounded font-medium mt-3 bg-gray-300 text-xs uppercase">Läs mer</a>
+                <a href="<?php the_permalink(); ?>" class="p-2 leading-none rounded font-medium mt-3 bg-green-200 text-xs uppercase">Läs mer</a>
 
 
 			</div>
 		</div>
-
-
-
 
 <?php endforeach; ?>
 

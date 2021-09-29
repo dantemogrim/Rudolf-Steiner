@@ -12,11 +12,15 @@ A collaborative mission to update the website for Ruben Steinerskolan in Götebo
 
 - [ ] Front page with paralax or image sequences.
 - [ ] Footer menu with placeholder icons.
-- [ ] Template for "Ansökan".
-- [ ] Template for "Evenemang".
-- [ ] Template for "Föräldrar".
-- [ ] Template for "Kontakt".
-- [ ] Template for "Om Oss".
+- [ ] Hamburger menu in Mobile view.
+- [ ] Submenus in Desktop view.
+- [ ] Submenus in Mobile view.
+- [ ] Implement Antropos @font-face.
+- [x] Template for "Ansökan".
+- [x] Template for "Undervisning".
+- [x] Template for "Föräldrar".
+- [x] Template for "Kontakt".
+- [x] Template for "Om Oss".
 
 **Gutenberg Block ideas:**
 
@@ -68,12 +72,13 @@ Once you have your localhost up and running and passed sign up or login, set the
 
 **Start by creating the following pages:**
 
-- Aktuellt
-- Ansökan
-- Evenemang
-- Föräldrar
 - Hem
 - Om Oss
+- Undervisning
+- Aktuellt
+- Föräldrar
+- Kontakt
+- Ansökan
 
 _Don't forget to publish these one by one._
 
@@ -120,10 +125,10 @@ _**Optional: In Settings -> General.**_
 
 _**Extra: Developer & Tailwind CSS specific color palette:**_
 
-- Blue = `light-blue-700`
+- Blue = `blue-700`
 - Light Blue = `blue-50`
-- Light Green = `light-green-100`
-- Navy = `light-blue-900`
+- Light Green = `green-100`
+- Navy = `blue-900`
 - Orange = `orange-200`
 - Pinkish Grey = `red-100`
 - Yellow = `yellow-200`
