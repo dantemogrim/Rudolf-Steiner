@@ -18,11 +18,11 @@
         </a>
             <p class=""><?php the_content(); ?></p>
 
-            <p class="text-indigo-500"><?php the_date(); ?></p>
+            <p class="text-blue-700"><?php the_date(); ?></p>
 
             <!-- Link to all posts in Aktuellt/index.php. -->
             <?php $blogPageUrl = get_permalink(get_option('page_for_posts')); ?>
-            <a href="<?= $blogPageUrl; ?>" class="p-2 leading-none rounded font-medium mt-3 bg-gray-300 text-xs uppercase">Se fler inlägg</a>
+            <a href="<?= $blogPageUrl; ?>" class="p-2 leading-none rounded font-medium mt-3 bg-green-200 text-xs uppercase">Se fler inlägg</a>
         </div>
     </div>
     <?php endwhile;
