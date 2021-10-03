@@ -13,10 +13,10 @@
     <?php $menuItems = get_menu('header-menu'); ?>
 
 
-    <nav class="w-100 sticky-top">
-        <div class="home">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="home navbar-brand">
             <a class="link" href="<?= get_home_url(); ?>">
-                <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/school.svg" />
+                <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/sun.svg" />
             </a>
             <h1 class="link"> Rudolf Steinerskolan</h1>
         </div>

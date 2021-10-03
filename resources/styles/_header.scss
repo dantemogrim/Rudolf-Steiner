@@ -48,6 +48,7 @@ nav {
     margin-right: 16px;
     &:hover {
       color: hotpink;
+      text-decoration: underline;
     }
   }
 
@@ -63,9 +64,11 @@ nav {
     pointer-events: none;
     flex-direction: column;
     transition: opacity 0.4s linear;
+    display: block;
 
     &.active,
     &:hover {
+      z-index: 1000;
       pointer-events: all;
       opacity: 1;
     }
