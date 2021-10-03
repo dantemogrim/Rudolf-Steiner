@@ -16,21 +16,23 @@ A collaborative mission to update the website for Ruben Steinerskolan in Götebo
 - [ ] Submenus in Desktop view.
 - [ ] Submenus in Mobile view.
 - [ ] Implement Antropos @font-face.
-- [x] Template for "Ansökan".
-- [x] Template for "Undervisning".
-- [x] Template for "Föräldrar".
-- [x] Template for "Kontakt".
-- [x] Template for "Om Oss".
+      _Template content for:_
+  - [ ] "Ansökan".
+  - [ ] "Undervisning".
+  - [ ] "Föräldrar".
+  - [ ] "Kontakt".
+  - [ ] "Om Oss".
 
 **Gutenberg Block ideas:**
 
 - [ ] CSS clip path/SVG blob where the user can type text on top.
-- [ ] Ipsum
-- [ ] Lorem
+- [ ] Footer, social media icons?
+- [ ] Staff members block?
 
 **Domain:**
 
 - [ ] Add the school's texts.
+- [ ] Rsync + GitHub Actions workflow as FTP tool.
 - [ ] Implement (new) logo.
 - [ ] Implement custom blocks from plugins.
 - [ ] Relevant image and database content.
@@ -52,7 +54,7 @@ $ composer install
 ### Database Connection
 
 Make a duplicate of the `env.example` file (within root) and rename it `.env`.
-within `DB_NAME=`, instead of `wordplate`, type out the name of your MySQL database connection.
+Create a MySQL database connection with the db-name "wu20".
 In your `.env` file, head over to the URL mentioned on [line 11](https://wordplate.github.io/salt/) and copy and replace your result under the link.
 
 ### Server
@@ -68,9 +70,11 @@ Once you have your localhost up and running and passed sign up or login, set the
 
 > _Can't find Dashboard? In your URL type: `localhost:8000/wp-admin`_.
 
+**First go to "Appearance" -> "Themes" and set the active menu to "WU20".**
+
 ### Menu
 
-**Start by creating the following pages:**
+**Go to Pages and add the following pages:**
 
 - Hem
 - Om Oss
@@ -84,11 +88,11 @@ _Don't forget to publish these one by one._
 
 **Then go to Appearence -> Menus (or Customize)**
 
-Create a new menu and give it the name `menu-bar`.
-Then under menu settings check the following boxes:
+Create a new menu and give it the name `header-menu`.
+Select all pages except "Hem" to your new menu.
+Then under "Menu Settings" check the following boxes:
 
-- [x] "Automatically add new top-level pages to this menu"
-- [x] "Navigation"
+- [x] "Header Menu"
 
 _Save your changes and publish._
 
@@ -123,22 +127,11 @@ _**Optional: In Settings -> General.**_
 - In "Time Format" switch to `H:i`.
 - _Extra optional: If you're not debugging/working change "Site Language" to "Svenska"._
 
-_**Extra: Developer & Tailwind CSS specific color palette:**_
-
-- Blue = `blue-700`
-- Light Blue = `blue-50`
-- Light Green = `green-100`
-- Navy = `blue-900`
-- Orange = `orange-200`
-- Pinkish Grey = `red-100`
-- Yellow = `yellow-200`
-
 ---
 
 ## :clamp: Tools
 
 - [Gutenberg](https://github.com/WordPress/gutenberg): for creating custom blocks.
-- [Tailwind CSS](https://tailwindcss.com/): styling.
 - [WordPlate](https://github.com/wordplate/wordplate#readme): WordPress wrapper for working locally.
 - [WordPress](https://wordpress.org/): CMS.
 
