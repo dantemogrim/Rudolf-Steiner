@@ -1,0 +1,45 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+:root {
+  --person_padding: 2rem;
+}
+
+.flexContainer {
+  --blockHeight: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: var(--blockHeight);
+  padding: var(--person_padding);
+  gap: var(--person_padding);
+  background: #FDF6D1;
+}
+
+.imageContainer {
+  width: calc(var(--blockHeight) - var(--person_padding) * 2);
+  height: calc(var(--blockHeight) - var(--person_padding) * 2);
+  position: relative;
+}
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.textContainer {
+  max-width: calc(100% - var(--blockHeight) + var(--person_padding));
+}
+.textContainer .lowerText {
+  color: #BF4B62;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
