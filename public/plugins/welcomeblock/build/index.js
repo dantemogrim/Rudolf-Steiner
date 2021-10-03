@@ -78,6 +78,41 @@ function Edit(_ref) {
     });
   };
 
+  var changeTitleHandler = function changeTitleHandler(e) {
+    var value = e.currentTarget.value;
+    setAttributes({
+      title: value
+    });
+  };
+
+  var changeSloganHandler = function changeSloganHandler(e) {
+    var value = e.currentTarget.value;
+    setAttributes({
+      slogan: value
+    });
+  };
+
+  var changeButtonHandler = function changeButtonHandler(e) {
+    var value = e.currentTarget.value;
+    setAttributes({
+      button: value
+    });
+  };
+
+  var changeH2Handler = function changeH2Handler(e) {
+    var value = e.currentTarget.value;
+    setAttributes({
+      h2: value
+    });
+  };
+
+  var changePHandler = function changePHandler(e) {
+    var value = e.currentTarget.value;
+    setAttributes({
+      p: value
+    });
+  };
+
   console.log(attributes);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select block background image', 'awp'),
@@ -102,15 +137,33 @@ function Edit(_ref) {
     onClick: removeMedia,
     isLink: true,
     isDestructive: true
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remove image', 'awp'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "editor-post-featured-image"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "...We will add code here...")))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remove image', 'awp'))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "topSection"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "RUDOLF STEINERSKOLAN G\xD6TEBORG"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "\u201CEn v\xE4g till frihet\u201D"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", null, "Ans\xF6k nu"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "titleInput",
+    onChange: changeTitleHandler,
+    defaultValue: attributes.title
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "sloganInput",
+    onChange: changeSloganHandler,
+    defaultValue: attributes.slogan
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "buttonInput buttonStyle",
+    defaultValue: attributes.button,
+    onChange: changeButtonHandler
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: attributes.mediaUrl
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "bottomSection"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, "V\xE4lkommen till oss!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Rudolf Steinerskolan \xE4r bel\xE4gen p\xE5 en h\xF6jd med underbar utsikt \xF6ver staden. Runtom kring finns tallskog och bergsknallar, h\xE4r kan man tidiga morgnar st\xF6ta p\xE5 harar och r\xE5djur. Skolg\xE5rden \xE4r naturligt bel\xE4gen i denna milj\xF6.")));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "h2Input input",
+    onChange: changeH2Handler,
+    defaultValue: attributes.h2
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
+    className: "pInput input",
+    onChange: changePHandler,
+    defaultValue: attributes.p
+  })));
 }
 
 /***/ }),
@@ -166,6 +219,26 @@ __webpack_require__.r(__webpack_exports__);
     mediaUrl: {
       type: 'string',
       default: ''
+    },
+    title: {
+      type: 'string',
+      default: 'RUDOLF STEINERSKOLAN GÖTEBORG'
+    },
+    button: {
+      type: 'string',
+      default: 'Ansök nu'
+    },
+    h2: {
+      type: 'string',
+      default: 'Välkommen till oss!'
+    },
+    p: {
+      type: 'string',
+      default: 'Rudolf Steinerskolan är belägen på en höjd med underbar utsikt över staden. Runtom kring finns tallskog och bergsknallar, här kan man tidiga morgnar stöta på harar och rådjur. Skolgården är naturligt belägen i denna miljö.'
+    },
+    slogan: {
+      type: 'string',
+      default: 'En väg till frihet'
     }
   },
 
@@ -233,12 +306,14 @@ function save(_ref) {
   console.log(attributes);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "topSection"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "RUDOLF STEINERSKOLAN G\xD6TEBORG"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "\u201CEn v\xE4g till frihet\u201D"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", null, "Ans\xF6k nu"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.slogan), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "buttonStyle"
+  }, attributes.button), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "backgroundImage",
     src: attributes.mediaUrl
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "bottomSection"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, "V\xE4lkommen till oss!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Rudolf Steinerskolan \xE4r bel\xE4gen p\xE5 en h\xF6jd med underbar utsikt \xF6ver staden. Runtom kring finns tallskog och bergsknallar, h\xE4r kan man tidiga morgnar st\xF6ta p\xE5 harar och r\xE5djur. Skolg\xE5rden \xE4r naturligt bel\xE4gen i denna milj\xF6.")))));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, attributes.h2), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.p)))));
 }
 
 /***/ }),

@@ -36,6 +36,26 @@ registerBlockType('create-block/welcomeblock', {
 		mediaUrl: {
 			type: 'string',
 			default: ''
+		},
+		title: {
+			type: 'string',
+			default: 'RUDOLF STEINERSKOLAN GÖTEBORG'
+		},
+		button: {
+			type: 'string',
+			default: 'Ansök nu'
+		},
+		h2: {
+			type: 'string',
+			default: 'Välkommen till oss!'
+		},
+		p: {
+			type: 'string',
+			default: 'Rudolf Steinerskolan är belägen på en höjd med underbar utsikt över staden. Runtom kring finns tallskog och bergsknallar, här kan man tidiga morgnar stöta på harar och rådjur. Skolgården är naturligt belägen i denna miljö.'
+		},
+		slogan: {
+			type: 'string',
+			default: 'En väg till frihet'
 		}
 	},
 	/**

@@ -30,14 +30,14 @@ export default function save({attributes}) {
 			{__(
 				<>
 				<div className='topSection'>
-					<h1>RUDOLF STEINERSKOLAN GÖTEBORG</h1>
-					<p>“En väg till frihet”</p>
-					<button>Ansök nu</button>
+					<h1>{attributes.title}</h1>
+					<p>{attributes.slogan}</p>
+					<button className='buttonStyle'>{attributes.button}</button>
 					<img className='backgroundImage' src={attributes.mediaUrl}></img>
 				</div> 
 				<div className='bottomSection'>
-					<h2>Välkommen till oss!</h2>
-					<p>Rudolf Steinerskolan är belägen på en höjd med underbar utsikt över staden. Runtom kring finns tallskog och bergsknallar, här kan man tidiga morgnar stöta på harar och rådjur. Skolgården är naturligt belägen i denna miljö.</p>
+					<h2>{attributes.h2}</h2>
+					<p>{attributes.p}</p>
 				</div>
 				</>
 			)}

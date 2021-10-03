@@ -50,6 +50,37 @@ export default function Edit({media, attributes, setAttributes}) {
 		});
 	}
 
+	const changeTitleHandler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			title: value
+		})
+	}
+	const changeSloganHandler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			slogan: value
+		})
+	}
+	const changeButtonHandler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			button: value
+		})
+	}
+	const changeH2Handler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			h2: value
+		})
+	}
+	const changePHandler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			p: value
+		})
+	}
+
 	console.log(attributes)
 	return (
 			<Fragment>
@@ -86,20 +117,17 @@ export default function Edit({media, attributes, setAttributes}) {
 								<Button onClick={removeMedia} isLink isDestructive>{__('Remove image', 'awp')}</Button>
 							</MediaUploadCheck>
 						}
-					<div className="editor-post-featured-image">
-						<p>...We will add code here...</p>
-					</div>
 					</PanelBody>
 				</InspectorControls>
 				<div className='topSection'>
-					<h1>RUDOLF STEINERSKOLAN GÖTEBORG</h1>
-					<p>“En väg till frihet”</p>
-					<button>Ansök nu</button>
+					<input className='titleInput' onChange={changeTitleHandler} defaultValue={attributes.title}/>
+					<input className='sloganInput' onChange={changeSloganHandler} defaultValue={attributes.slogan}/>
+					<input className='buttonInput buttonStyle' defaultValue={attributes.button} onChange={changeButtonHandler}/>
 					<img src={attributes.mediaUrl}></img>
 				</div> 
 				<div className='bottomSection'>
-					<h2>Välkommen till oss!</h2>
-					<p>Rudolf Steinerskolan är belägen på en höjd med underbar utsikt över staden. Runtom kring finns tallskog och bergsknallar, här kan man tidiga morgnar stöta på harar och rådjur. Skolgården är naturligt belägen i denna miljö.</p>
+					<input className='h2Input input' onChange={changeH2Handler} defaultValue={attributes.h2}/>
+					<textarea className='pInput input' onChange={changePHandler} defaultValue={attributes.p}/>
 				</div>
 			</Fragment>
 	);

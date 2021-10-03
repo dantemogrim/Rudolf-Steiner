@@ -18,8 +18,27 @@ div.topSection {
   text-align: center;
   color: white;
 }
-div.topSection h1, div.topSection p, div.topSection button {
+div.topSection h1, div.topSection p, div.topSection button, div.topSection input {
   z-index: 1;
+}
+div.topSection input {
+  color: white;
+  text-shadow: 2px 2px 10px #313131;
+  text-align: center;
+  border: none;
+  margin: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+div.topSection .titleInput {
+  width: 100%;
+  font-size: xx-large;
+  background: none;
+}
+div.topSection .sloganInput {
+  font-size: medium;
+  background: none;
 }
 div.topSection img {
   object-fit: cover;
@@ -28,7 +47,7 @@ div.topSection img {
   height: 100%;
   width: 100%;
 }
-div.topSection button {
+div.topSection .buttonStyle {
   border-radius: 5px;
   background: #30576f;
   padding: 10px 20px;
@@ -47,6 +66,18 @@ div.bottomSection {
   align-items: center;
   padding: 30px;
   height: 30vh;
+}
+div.bottomSection .input {
+  background: none;
+  color: #30576f;
+  border: none;
+}
+div.bottomSection .h2Input {
+  font-size: larger;
+}
+div.bottomSection .pInput {
+  border: #30576f 1px solid !important;
+  width: 80%;
 }
 
 .red {

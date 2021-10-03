@@ -14,11 +14,31 @@ div.topSection {
 	position: relative;
 	text-shadow: 2px 2px 10px rgb(49, 49, 49);
 	text-align: center;
-	h1, p, button {
+	color: white;
+	
+	h1, p, button, input {
 		z-index: 1;
 	}
-	color: white;
+	input {
+		color: white;
+		text-shadow: 2px 2px 10px rgb(49, 49, 49);
+		text-align: center;
+		border: none;
+		margin: 1rem;
+		width: fit-content;
+	}
 
+	.titleInput {
+		width: 100%;
+		font-size: xx-large;
+		background: none;
+	}
+	
+	.sloganInput {
+		font-size: medium;
+		background: none;
+	}
+	
 	img {
 		object-fit: cover;
 		position: absolute;
@@ -27,7 +47,7 @@ div.topSection {
 		width: 100%;
 		
 	}
-	button {
+	.buttonStyle {
 		border-radius: 5px;
 		background: rgba(48, 87, 111, 1);
 		padding: 10px 20px;
@@ -47,6 +67,22 @@ div.bottomSection {
 	align-items: center;
 	padding: 30px;
 	height: 30vh;
+
+	.input {
+		background: none;
+		color: rgba(48, 87, 111, 1);
+		border: none;
+	}
+
+	.h2Input {
+		font-size: larger;
+	}
+
+	.pInput {
+		border: rgba(48, 87, 111, 1) 1px solid !important;
+		width: 80%;
+	}
+
 }
 
 .red {
