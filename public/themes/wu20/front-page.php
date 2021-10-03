@@ -1,6 +1,8 @@
 <!-- Startsida/home page. -->
 <?php get_header(); ?>
 
+<?php the_content(); ?>
+
 <main role="main">
 
     <?php
