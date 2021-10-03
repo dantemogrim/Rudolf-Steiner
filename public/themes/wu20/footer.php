@@ -3,17 +3,36 @@
 
 <?php wp_footer(); ?>
 
-<footer class="">
+<footer>
 
-    <a href="#">
+    <div class="contact">
+        <ul>
+            <li><b>ADDRESS</b></li>
+            <li>Rudolf Steinerskolan i Göteborg</li>
+            <li>Tallhöjdsgatan 1</li>
+            <li>416 74 GÖTEBORG</li>
+        </ul>
+        <ul>
+            <li><b>E-POST</b></li>
+            <li>rudolf@steinerskolan.se</li>
+        </ul>
+        <ul>
+            <li><b>TELEFON</b></li>
+            <li>031-21 46 32</li>
+        </ul>
+    </div>
+
+    <div class="icons">
+
         <img class="social" src="<?= get_template_directory_uri(); ?>/icons/instagram.svg" />
-    </a>
-    <a href="#">
+
+
         <img class="social" src="<?= get_template_directory_uri(); ?>/icons/facebook.svg" />
-    </a>
-    <a href="#">
+
         <img class="social" src="<?= get_template_directory_uri(); ?>/icons/youtube.svg" />
-    </a>
+
+    </div>
+
 
 </footer>
 </div>
