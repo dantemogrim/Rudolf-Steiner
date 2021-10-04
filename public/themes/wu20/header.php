@@ -14,12 +14,10 @@
 
 
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="home navbar-brand">
-            <a href="<?= get_home_url(); ?>">
-                <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/sun.svg" />
-            </a>
-            <h1> Rudolf Steinerskolan</h1>
-        </div>
+        <a href="<?= get_home_url(); ?>">
+            <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
+        </a>
+
         <?php foreach ($menuItems as $menuItem) : ?>
             <?php if (sizeof($menuItem->children) === 0) : ?>
                 <!-- Single links. -->
@@ -36,7 +34,7 @@
                         <?php foreach ($menuItem->children as $child) : ?>
                             <!-- Children links. -->
                             <li>
-                                <a class="menuLinks" href="<?= $child->url ?>">
+                                <a class="childLinks" href="<?= $child->url ?>">
                                     <?= $child->title; ?>
                                 </a>
                             </li>

@@ -5,32 +5,30 @@ nav {
   position: relative;
   height: 100px;
 
-  .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .logo {
-    width: 30px;
+    width: 300px;
     margin: 10px;
   }
 
   h1 {
     font-size: 20px;
-    color: white;
   }
 
-  a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
+  // .menuLinks,
+  // .childLinks {
+  //   text-decoration: none;
+
+  //   &:hover {
+  //     text-decoration: none;
+  //   }
+  // }
+
+  .menuLinks {
+    margin-right: 16px;
   }
 
-  a:hover {
-    text-decoration: none;
-
-    text-transform: uppercase;
+  .hamburgerIcon {
+    display: none;
   }
 
   ul {
@@ -47,13 +45,6 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-  }
-
-  .menuLinks {
-    margin-right: 16px;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .childrenWrapper {

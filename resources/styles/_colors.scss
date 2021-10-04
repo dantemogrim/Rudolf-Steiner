@@ -2,25 +2,29 @@ $darkBlue: #31566f;
 $lightBlue: #e0ebf2;
 $lightGreen: #c3d7b4;
 $lightOrange: #ffd08e;
-$lightPink: #e9c0c9;
-$lightYellow: #fbe88a;
-$mediumBlue: #1084be;
+$lightPink: #f0dae0;
+$yellow: #dbb75c;
+$mediumBlue: #2f698d;
 
-nav,
+$paleWhite: #fafaff;
+
+nav {
+  background-color: $paleWhite;
+}
+
 footer {
   background-color: $darkBlue;
 }
 
 .childrenWrapper {
-  background-color: $mediumBlue;
+  background-color: $lightGreen;
 }
 
 .body {
   background-color: $lightBlue;
 }
 
-.menuLinks {
-  &:hover {
-    color: $lightGreen;
-  }
+.menuLinks,
+.childLinks {
+  color: $mediumBlue;
 }
