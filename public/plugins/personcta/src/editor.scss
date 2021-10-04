@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .person_input {
+	background: none;
+	border: none;
+	width: 100% !important;
+	@media (max-height: 570px) {
+	   visibility: hidden;
+   }
+}
+
+.upperText {
+   color: black;
+}
+
+.lowerText {
+   color: #BF4B62;
+   font-size: large;
+}
+
+.imageContainer {
+   img {
+	   height: 100%;
+   }
+}
+
+.textContainer {
+   width: calc(100% - var(--blockHeight) + var(--person_padding));
+   @media (max-height: 570px) {
+	   visibility: hidden;
+   }
+}
+
+.imageUploadContainer {
+	overflow: hidden;
+}

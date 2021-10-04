@@ -1,0 +1,111 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .flexContainer {
+	--smallBreakPoint: 650px;
+	--blockHeight: 200px;
+	--person_padding: 2rem;
+
+	@media (max-width: 650px) {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+	}
+	@media (max-width: 650px) {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+	}
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	height: var(--blockHeight);
+	padding: var(--person_padding);
+	gap: var(--person_padding);
+	background: #FAFAFF;
+	@media (min-width: 1110px) {
+		justify-content: center;
+	}
+}
+
+.imageContainer {
+	width: calc(var(--blockHeight) - var(--person_padding) * 2);
+	height: calc(var(--blockHeight) - var(--person_padding) * 2);
+	position: relative;
+	img {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+}
+
+.orangeDiv {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 115px;
+	background: #FFDFB3;
+	z-index: 0;
+	@media (min-width: 650px) {
+		height: 100%;
+		width: 70px;
+	}
+}
+
+.textContainer {
+	z-index: 1;
+	@media (max-width: 650px) {
+		max-width: calc(100% - var(--person_padding));
+	}
+	max-width: calc(100% - var(--blockHeight) + var(--person_padding));
+	.lowerText {
+		color: #BF4B62;
+		margin: 0;
+		font-weight: 500;
+	}
+}
+
+.ctaButton {
+	border-radius: 5px;
+	border: none;
+	background: rgba(47, 105, 141, 1);
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	&:hover {
+		color: white !important;
+	}
+}
+
+.person_nameBlue {
+	color: #BF4B62 !important;
+}
+.person_bgBlue {
+	background: #E0EBF2 !important;
+
+}
+.person_nameYellow {
+	color: #BF4B62 !important;
+}
+.person_bgYellow {
+	background: #FDF6D1 !important;
+}
+.person_nameWhite {
+	color: #8FB574 !important;
+}
+.person_bgWhite {
+	background: #FAFAFF !important;
+}

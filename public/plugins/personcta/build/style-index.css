@@ -1,0 +1,128 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.flexContainer {
+  --smallBreakPoint: 650px;
+  --blockHeight: 200px;
+  --person_padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: var(--blockHeight);
+  padding: var(--person_padding);
+  gap: var(--person_padding);
+  background: #FAFAFF;
+}
+@media (max-width: 650px) {
+  .flexContainer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .flexContainer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 1110px) {
+  .flexContainer {
+    justify-content: center;
+  }
+}
+
+.imageContainer {
+  width: calc(var(--blockHeight) - var(--person_padding) * 2);
+  height: calc(var(--blockHeight) - var(--person_padding) * 2);
+  position: relative;
+}
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.orangeDiv {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 115px;
+  background: #FFDFB3;
+  z-index: 0;
+}
+@media (min-width: 650px) {
+  .orangeDiv {
+    height: 100%;
+    width: 70px;
+  }
+}
+
+.textContainer {
+  z-index: 1;
+  max-width: calc(100% - var(--blockHeight) + var(--person_padding));
+}
+@media (max-width: 650px) {
+  .textContainer {
+    max-width: calc(100% - var(--person_padding));
+  }
+}
+.textContainer .lowerText {
+  color: #BF4B62;
+  margin: 0;
+  font-weight: 500;
+}
+
+.ctaButton {
+  border-radius: 5px;
+  border: none;
+  background: #2f698d;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.ctaButton:hover {
+  color: white !important;
+}
+
+.person_nameBlue {
+  color: #BF4B62 !important;
+}
+
+.person_bgBlue {
+  background: #E0EBF2 !important;
+}
+
+.person_nameYellow {
+  color: #BF4B62 !important;
+}
+
+.person_bgYellow {
+  background: #FDF6D1 !important;
+}
+
+.person_nameWhite {
+  color: #8FB574 !important;
+}
+
+.person_bgWhite {
+  background: #FAFAFF !important;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
