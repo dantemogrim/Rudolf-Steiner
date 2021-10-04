@@ -21,6 +21,7 @@ mix.setPublicPath(`public/themes/${theme}/assets`);
 
 mix
   .js("resources/scripts/app.js", "dist")
+  .js("resources/scripts/header.js", "dist")
   .js("resources/scripts/nav.js", "dist");
 
 mix.sass("resources/styles/app.scss", "dist");

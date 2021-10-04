@@ -3,10 +3,12 @@
     "/dist/nav.js": "/dist/nav.js",
     "/dist/app.css": "/dist/app.css",
     "/public/themes/wu20/fonts/antropos.woff2": "/public/themes/wu20/fonts/antropos.woff2",
-    "/public/themes/wu20/icons/Youtube.svg": "/public/themes/wu20/icons/Youtube.svg",
     "/public/themes/wu20/icons/at.svg": "/public/themes/wu20/icons/at.svg",
     "/public/themes/wu20/icons/facebook.svg": "/public/themes/wu20/icons/facebook.svg",
     "/public/themes/wu20/icons/instagram.svg": "/public/themes/wu20/icons/instagram.svg",
+    "/public/themes/wu20/icons/list.svg": "/public/themes/wu20/icons/list.svg",
     "/public/themes/wu20/icons/student.svg": "/public/themes/wu20/icons/student.svg",
-    "/public/themes/wu20/icons/sun.svg": "/public/themes/wu20/icons/sun.svg"
+    "/public/themes/wu20/icons/sun.svg": "/public/themes/wu20/icons/sun.svg",
+    "/public/themes/wu20/icons/x.svg": "/public/themes/wu20/icons/x.svg",
+    "/public/themes/wu20/icons/youtube.svg": "/public/themes/wu20/icons/youtube.svg"
 }

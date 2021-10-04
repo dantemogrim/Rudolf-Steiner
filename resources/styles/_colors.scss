@@ -1,19 +1,26 @@
-$lightPink: #e9c0c9;
 $darkBlue: #31566f;
-$lightGreen: #c3d7b4;
 $lightBlue: #e0ebf2;
+$lightGreen: #c3d7b4;
 $lightOrange: #ffd08e;
-$mediumBlue: #1084be;
+$lightPink: #e9c0c9;
 $lightYellow: #fbe88a;
+$mediumBlue: #1084be;
 
-nav {
+nav,
+footer {
   background-color: $darkBlue;
+}
+
+.childrenWrapper {
+  background-color: $mediumBlue;
 }
 
 .body {
   background-color: $lightBlue;
 }
 
-footer {
-  background-color: $darkBlue;
+.menuLinks {
+  &:hover {
+    color: $lightGreen;
+  }
 }

@@ -22,7 +22,8 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 // Register Staff as a custom post type.
-require get_template_directory() . '/post-types/medarbetare.php';
+require get_template_directory() . '/post-types/argument.php';
+require get_template_directory() . '/post-types/arskurs.php';
 require get_template_directory() . '/taxonomies/tool.php';
 
 function get_menu(string $location)
