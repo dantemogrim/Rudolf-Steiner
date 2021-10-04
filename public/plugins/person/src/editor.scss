@@ -8,7 +8,7 @@
 		 background: none;
 		 border: none;
 		 width: 100% !important;
-		 @media (max-height: 570px) {
+		 @media (max-height: 650px) {
 			visibility: hidden;
 		}
 	 }
@@ -30,7 +30,7 @@
 
 	.textContainer {
 		width: calc(100% - var(--blockHeight) + var(--person_padding));
-		@media (max-height: 570px) {
-			visibility: hidden;
+		@media (max-height: 650px) {
+			visibility: hidden;	
 		}
 	}

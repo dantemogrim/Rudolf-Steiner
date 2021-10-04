@@ -9,12 +9,12 @@
 	--blockHeight: 200px;
 	--person_padding: 2rem;
 
-	@media (max-width: 570px) {
+	@media (max-width: 650px) {
 		flex-direction: column;
 		height: auto;
 		text-align: center;
 	}
-	@media (max-width: 570px) {
+	@media (max-width: 650px) {
 		flex-direction: column;
 		height: auto;
 		text-align: center;
@@ -45,7 +45,7 @@
 }
 
 .textContainer {
-	@media (max-width: 570px) {
+	@media (max-width: 650px) {
 		max-width: calc(100% - var(--person_padding));
 	}
 	max-width: calc(100% - var(--blockHeight) + var(--person_padding));
