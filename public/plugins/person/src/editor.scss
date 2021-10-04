@@ -4,6 +4,33 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-create-block-person {
-	border: 1px dotted #f00;
-}
+	 .person_input {
+		 background: none;
+		 border: none;
+		 width: 100% !important;
+		 @media (max-height: 570px) {
+			visibility: hidden;
+		}
+	 }
+	
+	.upperText {
+		color: black;
+	}
+	
+	.lowerText {
+		color: #BF4B62;
+		font-size: large;
+	}
+
+	.imageContainer {
+		img {
+			height: 100%;
+		}
+	}
+
+	.textContainer {
+		width: calc(100% - var(--blockHeight) + var(--person_padding));
+		@media (max-height: 570px) {
+			visibility: hidden;
+		}
+	}

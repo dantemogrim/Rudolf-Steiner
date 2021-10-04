@@ -4,7 +4,6 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
-import person from './person.jpeg'
 /**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
@@ -22,15 +21,31 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
+export default function save({ attributes }) {
+
+	let bgClass
+	let nameClass
+	if(attributes.color === 'white') {
+		bgClass = 'person_bgWhite'
+		nameClass = 'person_nameWhite'
+	} 
+	if(attributes.color === 'yellow') {
+		bgClass = 'person_bgYellow'
+		nameClass = 'person_nameYellow'
+	} 
+	if(attributes.color === 'blue') {
+		bgClass = 'person_bgBlue'
+		nameClass = 'person_nameBlue'
+	} 
+
 	return (
-		<div className='flexContainer'>
+		<div className={`flexContainer ${bgClass}`}>
 			<div className='imageContainer'>
-				<img src={person}></img>
+				<img src={attributes.mediaUrl}></img>
 			</div>
 			<div className='textContainer'>
-				<p className='upperText'>“Lorem ipsum dolor sit amet, conse adipiscing elit. Tortor, viverra leo nunc at. At ut sapien, elit mattis cursus kole dictumst.”</p>
-				<p className='lowerText'>Johan Karlström, lärare</p>
+				<p className='upperText'>{attributes.text}</p>
+				<p className={`lowerText ${nameClass}`}>{attributes.name}</p>
 			</div>
 		</div>
 	);

@@ -4,6 +4,9 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
+const { ResponsiveWrapper } = wp.components;
+import { InspectorControls, MediaUpload, MediaUploadCheck } from '@wordpress/block-editor';
+import { PanelBody, Button } from '@wordpress/components';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -29,10 +32,114 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit({ media, attributes, setAttributes }) {
+
+	const onSelectMedia = (media) => {
+		setAttributes({
+			mediaId: media.id,
+			mediaUrl: media.url
+		});
+	}
+
+	const removeMedia = () => {
+		setAttributes({
+			mediaId: 0,
+			mediaUrl: ''
+		});
+	}
+
+	const changeTextHandler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			text: value
+		})
+	}
+	const changeNameHandler = (e) => {
+		const value = e.currentTarget.value;
+		setAttributes({
+			name: value
+		})
+	}
+	const changeColorHandler = (e) => {
+		const value = e.currentTarget.value;
+		if(value === 'blue' || value === 'yellow' || value === 'white') {
+			setAttributes({
+				color: value
+			})
+			console.log('value set')
+		}
+console.log(value)
+	}
+
+	let bgClass
+	let nameClass
+	if(attributes.color === 'white') {
+		bgClass = 'person_bgWhite'
+		nameClass = 'person_nameWhite'
+	} 
+	if(attributes.color === 'yellow') {
+		bgClass = 'person_bgYellow'
+		nameClass = 'person_nameYellow'
+	} 
+	if(attributes.color === 'blue') {
+		bgClass = 'person_bgBlue'
+		nameClass = 'person_nameBlue'
+	} 
+
 	return (
-		<p {...useBlockProps()}>
-			{__('Person – hello from the editor!', 'person')}
-		</p>
+		<>
+			<InspectorControls >
+				<PanelBody
+				title={'Select image'}
+				initialOpen={ true }
+				>
+					<MediaUploadCheck>
+						<MediaUpload
+							onSelect={onSelectMedia}
+							value={attributes.mediaId}
+							allowedTypes={ ['image'] }
+							render={({open}) => (
+								<Button 
+									className={attributes.mediaId == 0 ? 'editor-post-featured-image__toggle' : 'editor-post-featured-image__preview'}
+									onClick={open}
+								>
+									{!media && 'Choose an image'}
+									{media && 
+										<ResponsiveWrapper
+											naturalWidth={ media.media_details.width }
+											naturalHeight={ media.media_details.height }
+											>
+											<img src={media.source_url} />
+										</ResponsiveWrapper>
+									}
+								</Button>
+							)}
+						/>
+					</MediaUploadCheck>
+					{attributes.mediaId != 0 && 
+						<MediaUploadCheck>
+							<Button onClick={removeMedia} isLink isDestructive>{__('Remove image', 'awp')}</Button>
+						</MediaUploadCheck>
+					}
+					
+				</PanelBody>
+				
+				<PanelBody
+					title='Chose color'
+					initialOpen={ true }
+					>
+				<input onChange={changeColorHandler} placeholder='blue | white | yellow' defaultValue={attributes.color}/>
+				</PanelBody>
+			</InspectorControls>
+			<div className={`flexContainer ${bgClass}`}>
+				<div className='imageContainer'>
+					<img src={attributes.mediaUrl}></img>
+				</div>
+				<div className="textContainer" >
+					<textarea onChange={changeTextHandler} rows="4" className='upperText person_input' defaultValue={attributes.text}/>
+					<input onChange={changeNameHandler} className={`lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
+				</div>
+			</div>
+		</>
 	);
 }

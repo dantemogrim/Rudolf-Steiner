@@ -7,19 +7,36 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-:root {
-  --person_padding: 2rem;
-}
-
 .flexContainer {
   --blockHeight: 200px;
+  --person_padding: 2rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   position: relative;
   height: var(--blockHeight);
   padding: var(--person_padding);
   gap: var(--person_padding);
   background: #FDF6D1;
+}
+@media (max-width: 570px) {
+  .flexContainer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  .flexContainer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 1110px) {
+  .flexContainer {
+    justify-content: center;
+  }
 }
 
 .imageContainer {
@@ -37,9 +54,38 @@
 .textContainer {
   max-width: calc(100% - var(--blockHeight) + var(--person_padding));
 }
+@media (max-width: 570px) {
+  .textContainer {
+    max-width: calc(100% - var(--person_padding));
+  }
+}
 .textContainer .lowerText {
   color: #BF4B62;
   margin: 0;
+}
+
+.person_nameBlue {
+  color: #BF4B62 !important;
+}
+
+.person_bgBlue {
+  background: #E0EBF2 !important;
+}
+
+.person_nameYellow {
+  color: #BF4B62 !important;
+}
+
+.person_bgYellow {
+  background: #FDF6D1 !important;
+}
+
+.person_nameWhite {
+  color: #8FB574 !important;
+}
+
+.person_bgWhite {
+  background: #FAFAFF !important;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

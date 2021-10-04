@@ -4,6 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 import { registerBlockType } from '@wordpress/blocks';
+import { withSelect } from '@wordpress/data';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -26,10 +27,35 @@ import save from './save';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType('create-block/person', {
+
+	attributes: {
+		color: {
+			type: 'string',
+			default: 'yellow',
+		},
+		text: {
+			type: 'string',
+			default: '“Lorem ipsum dolor sit amet, conse adipiscing elit. Tortor, viverra leo nunc at. At ut sapien, elit mattis cursus kole dictumst.”',
+		},
+		name: {
+			type: 'string',
+			default: 'Name Namesson',
+		},
+		mediaId: {
+			type: 'number',
+			default: 0
+		},
+		mediaUrl: {
+			type: 'string',
+			default: ''
+		}
+	},
 	/**
 	 * @see ./edit.js
 	 */
-	edit: Edit,
+	edit: withSelect((select, props) => {
+		return { media: props.attributes.mediaId ? select('core').getMedia(props.attributes.mediaId) : undefined };
+	})(Edit),
 
 	/**
 	 * @see ./save.js
