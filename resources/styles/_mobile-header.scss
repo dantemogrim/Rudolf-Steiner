@@ -1,0 +1,78 @@
+$layout-breakpoint-small: 560px;
+
+@media (max-width: $layout-breakpoint-small) {
+  // Hamburger menu on.
+  .overlay {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #e0ebf2;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+
+    .menuLinks {
+      display: flex;
+      display: block;
+      white-space: nowrap;
+      margin: 30px 0 0 20px;
+    }
+
+    .subMenuBox {
+      position: relative;
+      left: 25px;
+      width: 100vw;
+      background-color: white;
+      top: 5px;
+    }
+
+    .closeMenuIcon,
+    .closeMenuButton {
+      display: block;
+      position: fixed;
+      top: 82px;
+      right: 62px;
+      width: 30px;
+      height: auto;
+    }
+
+    nav {
+      width: 0;
+      height: 0;
+      display: block;
+      margin: 150px 0 0 20px;
+    }
+
+    main,
+    .logo,
+    footer,
+    .hamburgerButton,
+    .hamburgerIcon {
+      display: none;
+    }
+  }
+
+  // Hamburger menu off.
+  nav {
+    .logo {
+      width: 200px;
+    }
+
+    .hamburgerButton,
+    .hamburgerIcon {
+      display: block;
+      background: none;
+      border: none;
+      text-decoration: none;
+      width: 30px;
+      height: auto;
+    }
+
+    .menuLinks {
+      display: none;
+    }
+  }
+}

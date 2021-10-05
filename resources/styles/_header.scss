@@ -16,9 +16,16 @@ nav {
 
   .menuLinks {
     margin-right: 16px;
+    white-space: nowrap;
+    &.childLinks {
+      white-space: nowrap;
+    }
   }
 
-  .hamburgerIcon {
+  .hamburgerIcon,
+  .hamburgerButton,
+  .closeMenuButton,
+  .closeMenuIcon {
     display: none;
   }
 
@@ -41,7 +48,7 @@ nav {
   .subMenuBox {
     padding: 1rem;
     border-radius: 8px;
-    z-index: 1000;
+    z-index: 1;
     top: 2rem;
     position: absolute;
     display: none;
@@ -52,7 +59,7 @@ nav {
 
     &.active {
       display: block;
-      z-index: 1000;
+      z-index: 1;
       pointer-events: all;
       opacity: 1;
     }
