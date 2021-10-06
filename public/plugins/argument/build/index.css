@@ -16,4 +16,9 @@ input, textarea {
   font-size: larger;
 }
 
+.upperContainerEdit {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=index.css.map*/

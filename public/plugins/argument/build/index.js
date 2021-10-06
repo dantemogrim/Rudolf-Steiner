@@ -129,11 +129,15 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     defaultValue: attributes.link,
     onChange: linkChangeHandler
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "outerDiv"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "top-image",
     src: _kidsbook_png__WEBPACK_IMPORTED_MODULE_3__
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "argument_flex-div"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "upperContainerEdit"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     onChange: h1ChangeHandler,
     defaultValue: attributes.h1,
@@ -144,13 +148,13 @@ function Edit({
     defaultValue: attributes.p,
     className: "p-input",
     placeholder: "Waldorfskolan har ambiti\xF6sa kunskapsm\xE5l f\xF6r varje enskild elev. Samtidigt \xE4r det pedagogiska syftet l\xE5ngsiktigt: avsikten \xE4r att skapa livsl\xE5ng lust till att l\xE4ra genom engagemang, nyfikenhet och f\xF6rundran"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: attributes.link
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "arrow-flex"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "L\xE4s fler anledningar h\xE4r"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: _nypil_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
-  })))));
+  }))))));
 }
 
 /***/ }),

@@ -64,14 +64,18 @@ export default function Edit({ attributes, setAttributes }) {
 					<input defaultValue={attributes.link} onChange={linkChangeHandler} />
 				</PanelBody>
 			</InspectorControls>
-			<img className='top-image' src={kids}></img>
-			<div className='argument_flex-div'>
-				<input onChange={h1ChangeHandler} defaultValue={attributes.h1} className='h2-input' placeholder='Kunskap'></input>
-				<textarea onChange={pChangeHandler} defaultValue={attributes.p} className='p-input' placeholder='Waldorfskolan har ambitiösa kunskapsmål för varje enskild elev. Samtidigt är det pedagogiska syftet långsiktigt: avsikten är att skapa livslång lust till att lära genom engagemang, nyfikenhet och förundran' ></textarea>
-				<a href={attributes.link}><div className='arrow-flex'>
-					<p>Läs fler anledningar här</p>
-					<img src={pil}></img>
-				</div></a>
+			<div className='outerDiv'>
+				<img className='top-image' src={kids}></img>
+				<div className='argument_flex-div'>
+					<div className='upperContainerEdit'>
+						<input onChange={h1ChangeHandler} defaultValue={attributes.h1} className='h2-input' placeholder='Kunskap'></input>
+						<textarea onChange={pChangeHandler} defaultValue={attributes.p} className='p-input' placeholder='Waldorfskolan har ambitiösa kunskapsmål för varje enskild elev. Samtidigt är det pedagogiska syftet långsiktigt: avsikten är att skapa livslång lust till att lära genom engagemang, nyfikenhet och förundran' ></textarea>
+					</div>
+					<a href={attributes.link}><div className='arrow-flex'>
+						<p>Läs fler anledningar här</p>
+						<img src={pil}></img>
+					</div></a>
+				</div>
 			</div>
 		</>
 	);
