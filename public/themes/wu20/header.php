@@ -19,15 +19,6 @@
                 <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
             </a>
 
-            <button class="hamburgerButton">
-                <img class="hamburgerIcon" src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
-            </button>
-
-            <a class="closeMenuButton">
-                <img class="closeMenuIcon" src="<?= get_template_directory_uri(); ?>/icons/x.svg" />
-            </a>
-
-
             <?php foreach ($menuItems as $menuItem) : ?>
                 <?php if (sizeof($menuItem->children) === 0) : ?>
                     <!-- Single links. -->
@@ -37,9 +28,12 @@
                 <?php else : ?>
                     <!-- Parent links. -->
                     <div class="parentAndChildrenWrapper">
-                        <a class="menuLinks mobileMenu" href="<?= $menuItem->url; ?>">
-                            <?= $menuItem->title; ?>
-                        </a>
+                        <div class="caretLinkWrapper">
+                            <img class="caret" src="<?= get_template_directory_uri(); ?>/icons/caret-down.svg" />
+                            <a class="menuLinks mobileMenu" href="<?= $menuItem->url; ?>">
+                                <?= $menuItem->title; ?>
+                            </a>
+                        </div>
                         <ul class="subMenuBox">
                             <?php foreach ($menuItem->children as $child) : ?>
                                 <!-- Children links. -->
@@ -53,6 +47,17 @@
                     </div>
                 <?php endif; ?>
             <?php endforeach; ?>
+
+            <button class="loginButton" type="button">Intranät</button>
+            <button class="applyButton" type="button">Ansök</button>
+
+            <button class="hamburgerButton">
+                <img class="hamburgerIcon" alt="Open mobile navigation." src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
+            </button>
+
+            <a class="closeMenuButton">
+                <img class="closeMenuIcon" alt="Close mobile navigation." src="<?= get_template_directory_uri(); ?>/icons/x.svg" />
+            </a>
 
         </nav>
         <main>

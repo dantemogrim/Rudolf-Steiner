@@ -14,9 +14,10 @@ $layout-breakpoint-small: 560px;
     z-index: 2;
     cursor: pointer;
 
-    .menuLinks {
+    .menuLinks,
+    .caret {
       display: flex;
-      display: block;
+      // display: block;
       white-space: nowrap;
       margin: 30px 0 0 20px;
     }
@@ -43,7 +44,12 @@ $layout-breakpoint-small: 560px;
       width: 0;
       height: 0;
       display: block;
-      margin: 150px 0 0 20px;
+      margin: 100px 0 0 20px;
+    }
+
+    .loginButton,
+    .applyButton {
+      margin: 30px 0 0 20px;
     }
 
     main,
@@ -71,7 +77,8 @@ $layout-breakpoint-small: 560px;
       height: auto;
     }
 
-    .menuLinks {
+    .menuLinks,
+    .caret {
       display: none;
     }
   }
