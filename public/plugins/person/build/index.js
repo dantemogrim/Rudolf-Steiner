@@ -92,6 +92,14 @@ function Edit({
     });
   };
 
+  const invertHandler = e => {
+    console.log(e.currentTarget);
+    const value = e.currentTarget.checked;
+    setAttributes({
+      inverted: value
+    });
+  };
+
   const changeColorHandler = e => {
     const value = e.currentTarget.value;
 
@@ -152,7 +160,28 @@ function Edit({
     onChange: changeColorHandler,
     placeholder: "blue | white | yellow",
     defaultValue: attributes.color
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Invert"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    checked: attributes.inverted,
+    onChange: invertHandler,
+    type: "checkbox"
+  }))), attributes.inverted ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flexContainer flexContainerRight ".concat(bgClass)
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "textContainer textRightContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
+    onChange: changeTextHandler,
+    rows: "4",
+    className: "textRightP upperText person_input",
+    defaultValue: attributes.text
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    onChange: changeNameHandler,
+    className: "textRightName lowerText person_input ".concat(nameClass),
+    defaultValue: attributes.name
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "imageContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: attributes.mediaUrl
+  }))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "flexContainer ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "imageContainer"
@@ -237,6 +266,10 @@ __webpack_require__.r(__webpack_exports__);
     mediaUrl: {
       type: 'string',
       default: ''
+    },
+    inverted: {
+      type: 'boolean',
+      default: false
     }
   },
 
@@ -320,7 +353,19 @@ function save({
     nameClass = 'person_nameBlue';
   }
 
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  return attributes.inverted ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flexContainer flexContainerRight ".concat(bgClass)
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "textContainer textRightContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "upperText textRightP"
+  }, attributes.text), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "lowerText textRightName ".concat(nameClass)
+  }, attributes.name)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "imageContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: attributes.mediaUrl
+  }))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "flexContainer ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "imageContainer"

@@ -48,6 +48,10 @@ registerBlockType('create-block/person', {
 		mediaUrl: {
 			type: 'string',
 			default: ''
+		},
+		inverted: {
+			type: 'boolean',
+			default: false
 		}
 	},
 	/**

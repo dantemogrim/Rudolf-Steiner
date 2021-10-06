@@ -39,14 +39,26 @@ export default function save({ attributes }) {
 	} 
 
 	return (
-		<div className={`flexContainer ${bgClass}`}>
+
+		attributes.inverted ? 
+		<div className={`flexContainer flexContainerRight ${bgClass}`}>
+			<div className='textContainer textRightContainer'>
+				<p className='upperText textRightP'>{attributes.text}</p>
+				<p className={`lowerText textRightName ${nameClass}`}>{attributes.name}</p>
+			</div>
 			<div className='imageContainer'>
 				<img src={attributes.mediaUrl}></img>
 			</div>
-			<div className='textContainer'>
-				<p className='upperText'>{attributes.text}</p>
-				<p className={`lowerText ${nameClass}`}>{attributes.name}</p>
-			</div>
 		</div>
+		:
+		<div className={`flexContainer ${bgClass}`}>
+		<div className='imageContainer'>
+			<img src={attributes.mediaUrl}></img>
+		</div>
+		<div className='textContainer'>
+			<p className='upperText'>{attributes.text}</p>
+			<p className={`lowerText ${nameClass}`}>{attributes.name}</p>
+		</div>
+	</div> 
 	);
 }

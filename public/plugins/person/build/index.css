@@ -11,7 +11,7 @@
   border: none;
   width: 100% !important;
 }
-@media (max-height: 570px) {
+@media (max-height: 650px) {
   .person_input {
     visibility: hidden;
   }
@@ -33,7 +33,7 @@
 .textContainer {
   width: calc(100% - var(--blockHeight) + var(--person_padding));
 }
-@media (max-height: 570px) {
+@media (max-height: 650px) {
   .textContainer {
     visibility: hidden;
   }

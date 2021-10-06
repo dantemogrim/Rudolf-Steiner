@@ -60,6 +60,13 @@ export default function Edit({ media, attributes, setAttributes }) {
 			name: value
 		})
 	}
+	const invertHandler = (e) => {
+		console.log(e.currentTarget)
+		const value = e.currentTarget.checked;
+		setAttributes({
+			inverted: value
+		})
+	}
 	const changeColorHandler = (e) => {
 		const value = e.currentTarget.value;
 		if(value === 'blue' || value === 'yellow' || value === 'white') {
@@ -130,7 +137,23 @@ console.log(value)
 					>
 				<input onChange={changeColorHandler} placeholder='blue | white | yellow' defaultValue={attributes.color}/>
 				</PanelBody>
-			</InspectorControls>
+				<PanelBody>
+					<p>Invert</p>
+					<input checked={attributes.inverted} onChange={invertHandler} type='checkbox'></input>
+				</PanelBody>
+			</InspectorControls> 
+			{
+			attributes.inverted ? 
+			<div className={`flexContainer flexContainerRight ${bgClass}`}>
+				<div className="textContainer textRightContainer" >
+					<textarea onChange={changeTextHandler} rows="4" className='textRightP upperText person_input' defaultValue={attributes.text}/>
+					<input onChange={changeNameHandler} className={`textRightName lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
+				</div>
+				<div className='imageContainer'>
+					<img src={attributes.mediaUrl}></img>
+				</div>
+			</div> 
+			:
 			<div className={`flexContainer ${bgClass}`}>
 				<div className='imageContainer'>
 					<img src={attributes.mediaUrl}></img>
@@ -140,6 +163,7 @@ console.log(value)
 					<input onChange={changeNameHandler} className={`lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
 				</div>
 			</div>
+			}
 		</>
 	);
 }

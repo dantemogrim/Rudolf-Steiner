@@ -19,14 +19,14 @@
   gap: var(--person_padding);
   background: #FDF6D1;
 }
-@media (max-width: 570px) {
+@media (max-width: 650px) {
   .flexContainer {
     flex-direction: column;
     height: auto;
     text-align: center;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 650px) {
   .flexContainer {
     flex-direction: column;
     height: auto;
@@ -36,6 +36,12 @@
 @media (min-width: 1110px) {
   .flexContainer {
     justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .flexContainerRight {
+    flex-direction: column-reverse !important;
   }
 }
 
@@ -54,7 +60,7 @@
 .textContainer {
   max-width: calc(100% - var(--blockHeight) + var(--person_padding));
 }
-@media (max-width: 570px) {
+@media (max-width: 650px) {
   .textContainer {
     max-width: calc(100% - var(--person_padding));
   }
@@ -62,6 +68,16 @@
 .textContainer .lowerText {
   color: #BF4B62;
   margin: 0;
+}
+@media (max-width: 650px) {
+  .textContainer .lowerText {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .textContainer .upperText {
+    text-align: center;
+  }
 }
 
 .person_nameBlue {
@@ -86,6 +102,24 @@
 
 .person_bgWhite {
   background: #FAFAFF !important;
+}
+
+.textRightName {
+  text-align: right;
+}
+@media (max-width: 650px) {
+  .textRightName {
+    text-align: center;
+  }
+}
+
+.textRightP {
+  text-align: right;
+}
+@media (max-width: 650px) {
+  .textRightP {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/

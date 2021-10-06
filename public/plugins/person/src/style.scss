@@ -32,6 +32,12 @@
 	}
 }
 
+.flexContainerRight {
+	@media (max-width: 650px) {
+		flex-direction: column-reverse !important;
+	}
+}
+
 .imageContainer {
 	width: calc(var(--blockHeight) - var(--person_padding) * 2);
 	height: calc(var(--blockHeight) - var(--person_padding) * 2);
@@ -52,6 +58,14 @@
 	.lowerText {
 		color: #BF4B62;
 		margin: 0;
+		@media (max-width: 650px) {
+			text-align: center;
+		}
+	}
+	.upperText {
+		@media (max-width: 650px) {
+			text-align: center;
+		}
 	}
 }
 
@@ -73,4 +87,18 @@
 }
 .person_bgWhite {
 	background: #FAFAFF !important;
+}
+
+.textRightName {
+	text-align: right;
+	@media (max-width: 650px) {
+		text-align: center;
+	}
+}
+
+.textRightP {
+text-align: right;
+@media (max-width: 650px) {
+	text-align: center;
+}
 }
