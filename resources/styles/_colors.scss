@@ -12,6 +12,21 @@ nav {
   background-color: $paleWhite;
 }
 
+.loginButton {
+  background-color: $lightOrange;
+}
+
+.applyButton {
+  background-color: $lightPink;
+}
+
+.loginButton,
+.applyButton {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 footer {
   background-color: $darkBlue;
 }

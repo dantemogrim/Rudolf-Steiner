@@ -2,11 +2,22 @@
 const menuContainer = document.querySelectorAll(".parentAndChildrenWrapper");
 
 menuContainer.forEach((wrapper) => {
+  // Huvudlänkar.
   const menuButton = wrapper.querySelector(".menuLinks");
+  // Sublänkar.
   const subMenu = wrapper.querySelector(".subMenuBox");
 
   menuButton.addEventListener("click", function (event) {
     event.preventDefault();
+
+    // let activeElements = document.getElementsByClassName("active").length;
+    let activeElements = document.querySelectorAll(".active").length;
+
+    // if (activeElements === 0) {
+    //   subMenu.classList.add("active");
+    // } else {
+    //   subMenu.classList.add("shutdown");
+    // }
 
     subMenu.classList.toggle("active");
   });
@@ -18,17 +29,6 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 hamburgerButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("overlay");
-
-  // function changeImage() {
-  //   const hamburgerIcon = document.querySelector(".hamburgerIcon");
-  //   if (hamburgerIcon.src.match("list")) {
-  //     hamburgerIcon.src = "<?= get_template_directory_uri(); ?>/icons/x.svg";
-  //   } else {
-  //     hamburgerIcon.src = "<?= get_template_directory_uri(); ?>/icons/list.svg";
-  //   }
-  // }
-
-  // changeImage();
 });
 
 // Closing menu while mobile menu is opened.

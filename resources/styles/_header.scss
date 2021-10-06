@@ -2,8 +2,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  position: relative;
+  position: sticky;
+  top: 0;
   height: 100px;
+  z-index: 2;
 
   .logo {
     width: 300px;
@@ -22,9 +24,23 @@ nav {
   .menuLinks {
     margin-right: 16px;
     white-space: nowrap;
-    &.childLinks {
-      white-space: nowrap;
-    }
+  }
+
+  .childLinks {
+    white-space: nowrap;
+  }
+
+  .shutdown {
+    display: none;
+  }
+
+  .caret {
+    width: 20px;
+    height: auto;
+  }
+
+  .caretLinkWrapper {
+    display: flex;
   }
 
   .hamburgerIcon,

@@ -1,0 +1,49 @@
+$layout-breakpoint-small: 560px;
+
+@media (max-width: $layout-breakpoint-small) {
+  footer {
+    padding: 50px;
+
+    .footer-name {
+      color: white;
+      padding: 10px;
+    }
+    .contact {
+      letter-spacing: 0.1px;
+      margin: -40px;
+      // Yeah, I know...
+      margin-top: 20px;
+
+      li {
+        list-style-type: none;
+        font-weight: 200;
+        color: white;
+        margin-top: 2px;
+      }
+    }
+
+    .bottom {
+      margin-top: 50%;
+      .idun-login {
+        color: white;
+        font-weight: 200;
+        font-size: larger;
+        text-decoration: underline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .social {
+          width: 50px;
+          margin: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
