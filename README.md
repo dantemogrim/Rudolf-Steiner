@@ -10,31 +10,23 @@ A collaborative mission to update the website for Ruben Steinerskolan in Götebo
 
 **General:**
 
-- [ ] Front page with paralax or image sequences.
-- [ ] Footer menu with placeholder icons.
-- [ ] Hamburger menu in Mobile view.
-- [ ] Submenus in Desktop view.
-- [ ] Submenus in Mobile view.
-- [ ] Implement Antropos @font-face.
       _Template content for:_
-  - [ ] "Ansökan".
-  - [ ] "Undervisning".
-  - [ ] "Föräldrar".
-  - [ ] "Kontakt".
-  - [ ] "Om Oss".
+
+- [ ] "Ansökan".
+- [ ] "Undervisning".
+- [ ] "Föräldrar".
+- [ ] "Kontakt".
+- [ ] "Om Oss".
 
 **Gutenberg Block ideas:**
 
 - [ ] CSS clip path/SVG blob where the user can type text on top.
-- [ ] Footer, social media icons?
-- [ ] Staff members block?
 
 **Domain:**
 
 - [ ] Add the school's texts.
 - [ ] Rsync + GitHub Actions workflow as FTP tool.
-- [ ] Implement (new) logo.
-- [ ] Implement custom blocks from plugins.
+- [x] Implement (new) logo.
 - [ ] Relevant image and database content.
 
 ## :pushpin: Instructions
@@ -76,13 +68,14 @@ Once you have your localhost up and running and passed sign up or login, set the
 
 **Go to Pages and add the following pages:**
 
-- Hem
-- Om Oss
-- Undervisning
 - Aktuellt
-- Föräldrar
-- Kontakt
 - Ansökan
+- Föräldrar (alt. Vårdnadshavare)
+- Hem
+- Kontakt
+- Om Oss
+- Pedagogik
+- Undervisning
 
 _Don't forget to publish these one by one._
 
@@ -90,6 +83,17 @@ _Don't forget to publish these one by one._
 
 Create a new menu and give it the name `header-menu`.
 Select all pages except "Hem" to your new menu.
+Drag and drop your pages so the structure looks like this:
+
+- Om Oss
+- Undervisning
+  - Pedagogik _sub item_
+  - Årskurser _sub item_
+- Aktuellt
+- Föräldrar
+- Kontakt
+- Ansökan
+
 Then under "Menu Settings" check the following boxes:
 
 - [x] "Header Menu"

@@ -8,43 +8,51 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('body'); ?>>
-    <?php wp_body_open(); ?>
+<body>
+
     <?php $menuItems = get_menu('header-menu'); ?>
+    <div class="mobile-menu">
 
 
-    <nav class="sticky-top">
-        <a href="<?= get_home_url(); ?>">
-            <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
-        </a>
+        <nav>
+            <a href="<?= get_home_url(); ?>">
+                <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
+            </a>
 
-        <img class="hamburgerIcon" src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
+            <button class="hamburgerButton">
+                <img class="hamburgerIcon" src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
+            </button>
 
-        <?php foreach ($menuItems as $menuItem) : ?>
-            <?php if (sizeof($menuItem->children) === 0) : ?>
-                <!-- Single links. -->
-                <a class="menuLinks" href="<?= $menuItem->url; ?>">
-                    <?= $menuItem->title; ?>
-                </a>
-            <?php else : ?>
-                <!-- Parent links. -->
-                <div class="parentAndChildrenWrapper">
-                    <a class="menuLinks" href="<?= $menuItem->url; ?>">
+            <a class="closeMenuButton">
+                <img class="closeMenuIcon" src="<?= get_template_directory_uri(); ?>/icons/x.svg" />
+            </a>
+
+
+            <?php foreach ($menuItems as $menuItem) : ?>
+                <?php if (sizeof($menuItem->children) === 0) : ?>
+                    <!-- Single links. -->
+                    <a class="menuLinks mobileMenu" href="<?= $menuItem->url; ?>">
                         <?= $menuItem->title; ?>
                     </a>
-                    <ul class="subMenuBox">
-                        <?php foreach ($menuItem->children as $child) : ?>
-                            <!-- Children links. -->
-                            <li>
-                                <a class="childLinks" href="<?= $child->url ?>">
-                                    <?= $child->title; ?>
-                                </a>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-            <?php endif; ?>
-        <?php endforeach; ?>
+                <?php else : ?>
+                    <!-- Parent links. -->
+                    <div class="parentAndChildrenWrapper">
+                        <a class="menuLinks mobileMenu" href="<?= $menuItem->url; ?>">
+                            <?= $menuItem->title; ?>
+                        </a>
+                        <ul class="subMenuBox">
+                            <?php foreach ($menuItem->children as $child) : ?>
+                                <!-- Children links. -->
+                                <li>
+                                    <a class="childLinks mobileMenu" href="<?= $child->url ?>">
+                                        <?= $child->title; ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
 
-        <img class="hamburgerIcon" src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
-    </nav>
+        </nav>
+        <main>
