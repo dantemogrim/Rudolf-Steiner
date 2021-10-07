@@ -38,14 +38,17 @@ div.topSection {
 		font-size: medium;
 		background: none;
 	}
+
+	.moreHeight {
+		min-height: 20px;
+	}
 	
-	img {
+	video, img {
 		object-fit: cover;
 		position: absolute;
 		z-index: 0;
 		height: 100%;
 		width: 100%;
-		
 	}
 	.buttonStyle {
 		border-radius: 5px;

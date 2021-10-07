@@ -56,6 +56,10 @@ registerBlockType('create-block/welcomeblock', {
 		slogan: {
 			type: 'string',
 			default: 'En väg till frihet'
+		},
+		mediaType: {
+			type: 'string',
+			default: 'video'
 		}
 	},
 	/**

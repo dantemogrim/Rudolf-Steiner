@@ -33,7 +33,13 @@ export default function save({attributes}) {
 					<h1>{attributes.title}</h1>
 					<p>{attributes.slogan}</p>
 					<button className='buttonStyle'>{attributes.button}</button>
-					<img className='backgroundImage' src={attributes.mediaUrl}></img>
+					{
+						attributes.mediaType === 'video' ? 
+						<video autoPlay='true' muted='true' loop className='backgroundImage' src={attributes.mediaUrl}></video>
+						:
+						<img src={attributes.mediaUrl}></img>
+					}
+					
 				</div> 
 				<div className='bottomSection'>
 					<h2>{attributes.h2}</h2>

@@ -40,7 +40,10 @@ div.topSection .sloganInput {
   font-size: medium;
   background: none;
 }
-div.topSection img {
+div.topSection .moreHeight {
+  min-height: 20px;
+}
+div.topSection video, div.topSection img {
   object-fit: cover;
   position: absolute;
   z-index: 0;

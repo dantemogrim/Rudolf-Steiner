@@ -2,6 +2,7 @@
 // const { PanelBody, button } = wp.components;
 const { Fragment } = wp.element;
 const { ResponsiveWrapper } = wp.components;
+import videoPlaceholder from './PtbGQ.png'
 /**
  * Retrieves the translation of text.
  *
@@ -37,9 +38,11 @@ import { PanelBody, Button } from '@wordpress/components';
 export default function Edit({media, attributes, setAttributes}) {
 	
 	const onSelectMedia = (media) => {
+		console.log(media)
 		setAttributes({
 			mediaId: media.id,
-			mediaUrl: media.url
+			mediaUrl: media.url,
+			mediaType: media.type
 		});
 	}
 
@@ -82,6 +85,7 @@ export default function Edit({media, attributes, setAttributes}) {
 	}
 
 	console.log(attributes)
+	console.log({media})
 	return (
 			<Fragment>
 				<InspectorControls>
@@ -93,7 +97,7 @@ export default function Edit({media, attributes, setAttributes}) {
 							<MediaUpload
 								onSelect={onSelectMedia}
 								value={attributes.mediaId}
-								allowedTypes={ ['image'] }
+								allowedTypes={ ['image', 'video'] }
 								render={({open}) => (
 									<Button 
 										className={attributes.mediaId == 0 ? 'editor-post-featured-image__toggle' : 'editor-post-featured-image__preview'}
@@ -105,7 +109,7 @@ export default function Edit({media, attributes, setAttributes}) {
 												naturalWidth={ media.media_details.width }
 												naturalHeight={ media.media_details.height }
 												>
-												<img src={media.source_url} />
+												<img className='previewImage' src={attributes.mediaType === 'video' ? videoPlaceholder : media.source_url} />
 											</ResponsiveWrapper>
 										}
 									</Button>
@@ -123,7 +127,12 @@ export default function Edit({media, attributes, setAttributes}) {
 					<input className='titleInput' onChange={changeTitleHandler} defaultValue={attributes.title}/>
 					<input className='sloganInput' onChange={changeSloganHandler} defaultValue={attributes.slogan}/>
 					<input className='buttonInput buttonStyle' defaultValue={attributes.button} onChange={changeButtonHandler}/>
-					<img src={attributes.mediaUrl}></img>
+					{
+						attributes.mediaType === 'video' ? 
+						<video autoPlay='true' muted='true' loop className='backgroundImage' src={attributes.mediaUrl}></video>
+						:
+						<img src={attributes.mediaUrl}></img>
+					}
 				</div> 
 				<div className='bottomSection'>
 					<input className='h2Input input' onChange={changeH2Handler} defaultValue={attributes.h2}/>
