@@ -5,7 +5,6 @@ $layout-breakpoint-small: 560px;
     padding: 50px;
 
     .footer-name {
-      color: white;
       padding: 10px;
     }
     .contact {
@@ -17,7 +16,6 @@ $layout-breakpoint-small: 560px;
       li {
         list-style-type: none;
         font-weight: 200;
-        color: white;
         margin-top: 2px;
       }
     }
@@ -25,7 +23,6 @@ $layout-breakpoint-small: 560px;
     .bottom {
       margin-top: 50%;
       .idun-login {
-        color: white;
         font-weight: 200;
         font-size: larger;
         text-decoration: underline;
