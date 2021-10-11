@@ -1,110 +1,189 @@
 $layout-breakpoint-small: 560px;
 
 @media (max-width: $layout-breakpoint-small) {
+  // Hamburger menu off.
+  nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    align-items: center;
+
+    // Hide irrelevant content.
+    .fullMenuContainer {
+      display: none;
+    }
+
+    // Show relevant content.
+    .brand {
+      width: 200px;
+      margin: 0 0 0 10px;
+      left: 10px;
+      height: auto;
+    }
+
+    // .applyButtonBrand {
+    //   display: block;
+    //   padding: 5px;
+    //   width: 65px;
+    //   border: none;
+    //   border-radius: 4px;
+    // }
+
+    .hamburgerOpenButton,
+    .hamburgerOpenIcon {
+      background: none;
+      border: none;
+      display: block;
+      height: auto;
+      position: sticky;
+      text-decoration: none;
+      margin: 0 20px 0 0;
+      top: 25px;
+      width: 35px;
+    }
+
+    .burgerWrapper {
+      width: 35px;
+      height: auto;
+      margin: 0 20px 0 0;
+    }
+
+    .primaryLinks,
+    .caretBlue,
+    .caretWhite,
+    .intranetLinkHeader {
+      display: none;
+    }
+  }
+
   // Hamburger menu on.
   .overlay {
-    // position: fixed;
-    width: 100%;
+    position: fixed;
+    width: 100vw;
     min-height: 100vh;
     top: 0;
     left: 0;
     opacity: 1;
     display: block;
     z-index: 2;
+    overflow: hidden;
 
     nav {
-      display: block;
-      width: 0;
-      height: 0;
-      // Odd solution to make menu items step down but it works.
-      margin: 50px 0 0 0;
-      padding: 20px;
-    }
-
-    .navFlexDesktop {
-      flex-direction: column;
-      width: 70vw;
-      //align-self: center;
-      align-items: flex-start;
-    }
-
-    .caret {
-      display: block;
-    }
-
-    .menuLinks {
-      display: flex;
-      // display: block;
-      white-space: nowrap;
-      margin: 30px 0 0 30px;
-    }
-
-    .subMenuBox {
-      position: relative;
-      left: 55px;
       width: 100vw;
-      top: 5px;
-    }
-
-    .applyButton {
-      padding: 5px;
-      margin: 30px 0 0 30px;
-    }
-
-    .closeMenuIcon,
-    .closeMenuButton {
-      display: block;
-      width: 35px;
-      height: auto;
-      position: absolute;
-      top: -17px;
-      left: 160px;
-    }
-
-    main,
-    footer,
-    .logo,
-    .hamburgerButton,
-    .hamburgerIcon {
-      display: none;
-    }
-  }
-
-  // Hamburger menu off.
-  nav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-
-    .logo {
-      width: 200px;
-      height: auto;
-    }
-
-    .applyButton {
-      margin: 0 10px 0 0;
-    }
-
-    .hamburgerButton,
-    .hamburgerIcon {
-      background: none;
-      border: none;
-      display: block;
-      height: auto;
+      display: flex;
       position: sticky;
-      margin: 0 15px 0 0;
-      text-decoration: none;
-      top: 25px;
-      width: 35px;
-    }
+      top: 0;
+      height: 100px;
+      align-items: center;
 
-    .menuLinks,
-    .caret {
-      display: none;
+      // Hide irrelevant content.
+      .hamburgerOpenButton,
+      .hamburgerCloseButon,
+      .caretWhite {
+        display: none;
+      }
+
+      // Show relevant content.
+      .hamburgerCloseIcon,
+      .hamburgerCloseButton,
+      .fullMenuContainer,
+      .caretBlue,
+      .primaryLinks,
+      .intranetLinkHeader {
+        display: block;
+      }
+
+      .brand {
+        width: 200px;
+        margin: 0 0 0 10px;
+        left: 10px;
+        height: auto;
+      }
+
+      .hamburgerCloseIcon,
+      .hamburgerCloseButton {
+        background: none;
+        border: none;
+        display: block;
+        height: auto;
+        position: sticky;
+        text-decoration: none;
+
+        top: 25px;
+        width: 35px;
+      }
+
+      .burgerWrapper {
+        width: 35px;
+        height: auto;
+        margin: 0 20px 0 0;
+      }
+
+      .fullMenuContainer {
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        margin: 0 0 0 0;
+        position: absolute;
+        top: 105px;
+        width: 100vw;
+      }
+
+      .caretBlue {
+        height: auto;
+        width: 20px;
+      }
+
+      .caretLinkWrapper {
+        align-items: center;
+        border-radius: 4px;
+        display: flex;
+        height: 50px;
+        margin: 3px;
+        padding: 10px;
+        width: 95vw;
+      }
+
+      .primaryLinks {
+        margin: 0 0 0 10px;
+      }
+
+      .singleSubLinkContainer {
+        align-items: center;
+        background-color: #fafaff;
+        border-radius: 4px;
+        bottom: 25px;
+        display: flex;
+        height: 30px;
+        left: 2px;
+        margin: 4px 0 0 0;
+        position: relative;
+        width: 95vw;
+      }
+
+      .subLink {
+        color: #05395e;
+        margin: 0 0 0 30px;
+      }
+
+      .subMenuBox {
+        position: relative;
+        padding: 0;
+        top: 30px;
+        background-color: transparent;
+      }
+
+      .intranetApplyWrapper {
+        width: 100vw;
+        justify-content: space-evenly;
+        height: 100px;
+        margin: 0;
+      }
+
+      .applyButton {
+        width: 85px;
+      }
     }
   }
 }

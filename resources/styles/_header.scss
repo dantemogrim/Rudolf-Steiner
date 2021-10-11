@@ -3,20 +3,20 @@ nav {
   position: sticky;
   top: 0;
   height: 70px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 2;
 
-  .logo {
+  .brand {
     width: 250px;
     margin: 0 30px 0 20px;
   }
 
-  .navFlexDesktop {
+  .fullMenuContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 60vw;
+    justify-content: flex-end;
+    width: 70vw;
     align-items: center;
   }
 
@@ -25,22 +25,18 @@ nav {
     display: block;
   }
 
-  .childLinks,
-  .menuLinks {
-    text-decoration: none;
-    white-space: nowrap;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .caret {
+  .caretBlue {
     width: 20px;
     height: auto;
   }
 
+  .caretWhite {
+    display: none;
+  }
+
   .caretLinkWrapper {
     display: flex;
+    margin: 0 20px 0 0;
   }
 
   ul {
@@ -48,7 +44,7 @@ nav {
     padding: 0;
   }
 
-  .parentAndChildrenWrapper {
+  .primaryAndSubWrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -74,6 +70,10 @@ nav {
     }
   }
 
+  .applyButtonBrand {
+    display: none;
+  }
+
   .applyButton {
     border: none;
     padding: 5px;
@@ -81,10 +81,17 @@ nav {
     margin: 0 0 0 20px;
   }
 
-  .hamburgerIcon,
-  .hamburgerButton,
-  .closeMenuButton,
-  .closeMenuIcon {
+  .intranetApplyWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 20px;
+  }
+
+  .hamburgerOpenIcon,
+  .hamburgerOpenButton,
+  .hamburgerCloseButton,
+  .hamburgerCloseIcon {
     display: none;
   }
 }

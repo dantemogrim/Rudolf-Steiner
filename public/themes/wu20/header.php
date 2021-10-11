@@ -8,38 +8,46 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
 
     <?php $menuItems = get_menu('header-menu'); ?>
-    <div class="mobile-menu">
+    <div class="mobileMenuOverlay">
 
         <nav>
-            <a href="<?= get_home_url(); ?>">
-                <img class="logo" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
+
+            <a class="brandHomeLink" href="<?= get_home_url(); ?>">
+                <img class="brand" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
             </a>
 
-            <div class="navFlexDesktop">
+            <button class="applyButtonBrand" type="button">
+                Ansök
+            </button>
+
+            <div class="fullMenuContainer">
+
 
                 <?php foreach ($menuItems as $menuItem) : ?>
                     <?php if (sizeof($menuItem->children) === 0) : ?>
-                        <!-- Single links. -->
-                        <a class="menuLinks mobileMenu" href="<?= $menuItem->url; ?>">
+                        <!-- Single buttons. -->
+                        <a class="primaryLinks" href="<?= $menuItem->url; ?>">
                             <?= $menuItem->title; ?>
                         </a>
                     <?php else : ?>
                         <!-- Parent links. -->
-                        <div class="parentAndChildrenWrapper">
+                        <div class="primaryAndSubWrapper">
                             <div class="caretLinkWrapper">
-                                <img class="caret" src="<?= get_template_directory_uri(); ?>/icons/caret-down.svg" />
-                                <a class="menuLinks mobileMenu" href="<?= $menuItem->url; ?>">
+                                <img class="caretBlue" src="<?= get_template_directory_uri(); ?>/icons/caret-down-blue.svg" />
+                                <img class="caretWhite" src="<?= get_template_directory_uri(); ?>/icons/caret-down-white.svg" />
+                                <a class="primaryLinks" href="<?= $menuItem->url; ?>">
                                     <?= $menuItem->title; ?>
                                 </a>
                             </div>
                             <ul class="subMenuBox">
                                 <?php foreach ($menuItem->children as $child) : ?>
                                     <!-- Children links. -->
-                                    <li>
-                                        <a class="childLinks mobileMenu" href="<?= $child->url ?>">
+                                    <li class="singleSubLinkContainer">
+                                        <a class="subLink" href="<?= $child->url ?>">
                                             <?= $child->title; ?>
                                         </a>
                                     </li>
@@ -50,21 +58,30 @@
                 <?php endforeach; ?>
 
 
-                <button class="applyButton" type="button">
-                    Ansök
-                    <img class="applyIcon" src="">
-                </button>
 
-                <button class="hamburgerButton">
-                    <img class="hamburgerIcon" alt="Open mobile navigation." src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
-                </button>
+                <div class="intranetApplyWrapper">
+                    <a class="intranetLinkHeader">
+                        Intranät
+                    </a>
+                    <button class="applyButton" type="button">
+                        Ansök
+                    </button>
+                </div>
 
-                <a class="closeMenuButton">
-                    <img class="closeMenuIcon" alt="Close mobile navigation." src="<?= get_template_directory_uri(); ?>/icons/x.svg" />
-                </a>
+
             </div>
 
-        </nav>
+            <div class="burgerWrapper">
+                <button class="hamburgerOpenButton">
+                    <img class="hamburgerOpenIcon" alt="Open mobile navigation." src="<?= get_template_directory_uri(); ?>/icons/list.svg" />
+                </button>
+
+                <button class="hamburgerCloseButton">
+                    <img class="hamburgerCloseIcon" alt="Close mobile navigation." src="<?= get_template_directory_uri(); ?>/icons/x.svg" />
+                </button>
+            </div>
 
 
-        <main>
+    </div>
+    </nav>
+    <main>

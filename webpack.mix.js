@@ -27,3 +27,4 @@ mix.sass("resources/styles/app.scss", "dist");
 
 mix.copyDirectory("resources/fonts", `public/themes/${theme}/fonts`);
 mix.copyDirectory("resources/icons", `public/themes/${theme}/icons`);
+mix.copyDirectory("resources/images", `public/themes/${theme}/images`);
