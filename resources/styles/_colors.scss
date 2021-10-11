@@ -28,6 +28,24 @@ html,
   background-color: $navbarAndMainWhite;
 }
 
+// Menylänkar
+h2 {
+  color: #b64259;
+}
+
+// Argumenten h4
+h4 {
+  color: #04495e;
+}
+
+.cardPedagogik {
+  background-color: #e2f5d6;
+}
+
+.cardArskurser {
+  background-color: #e0ebf2;
+}
+
 .applyButton,
 .applyButtonBrand {
   background-color: $buttonBlue;

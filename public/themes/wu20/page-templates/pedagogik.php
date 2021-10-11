@@ -2,46 +2,43 @@
 
 <?php get_header(); ?>
 
-<div>
-    <?php if (have_posts()) : ?>
-
-        <?php while (have_posts()) : the_post(); ?>
-
-            <h2><?php the_title(); ?></h2>
-
-            <?php the_content(); ?>
-
-        <?php endwhile; ?>
-
-    <?php endif; ?>
-</div>
-
-
 <?php
-$argumenten = get_posts(['post_type' => 'argument']);
+
+
+$args = [
+    'numberposts' => -1,
+    'post_type' => 'argument',
+    'order' => 'asc',
+];
+
+$argumenten = get_posts($args);
+
+
 ?>
 
 <?php if (count($argumenten)) : ?>
+
+
+    <h2><?php the_title(); ?></h2>
+
+
     <div>
-        <h3>Läs mer om dessa här:</h3>
 
         <ul>
             <?php foreach ($argumenten as $post) : setup_postdata($post); ?>
-                <li>
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
-                    <?php $tools = get_the_terms($post, 'tool'); ?>
-                    <?php if ($tools) : ?>
-                        <p>
-                            Tag:
-                            <?php foreach ($tools as $tool) : ?>
-                                <a href="<?php echo get_term_link($tool) ?>"><?php echo $tool->name; ?></a>
-                            <?php endforeach; ?>
-                        </p>
-                    <?php endif; ?>
-                </li>
+                <div class="card m-3">
+                    <div class="card-body cardPedagogik">
+                        <a href="<?php the_permalink(); ?>">
+                            <h4><?php the_title(); ?></h4>
+                        </a>
+                        <?php the_excerpt(); ?>
+                    </div>
+                </div>
+
+
             <?php endforeach; ?>
-        </ul>
+
     </div>
 <?php endif; ?>
 
