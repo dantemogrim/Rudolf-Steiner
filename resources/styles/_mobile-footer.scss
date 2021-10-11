@@ -30,6 +30,17 @@ $layout-breakpoint-small: 560px;
         justify-content: center;
         align-items: center;
       }
+      .info {
+        color: white;
+        font-weight: 100;
+        font-size: small;
+        padding: 4px;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .icons {
         display: flex;
         justify-content: center;

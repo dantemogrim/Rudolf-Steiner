@@ -22,7 +22,8 @@
         </ul>
     </div>
     <div class="bottom">
-        <h2 class="idun-login">Logga in på Idunsoft</h2>
+        <h2 class="idun-login">Idunsoft Portal</h2>
+        <p class="info">Idunsoft är vårt intranät för elever och vårdnadshavare.</p>
         <div class="icons">
 
             <img class="social" src="<?= get_template_directory_uri(); ?>/icons/instagram.svg" />

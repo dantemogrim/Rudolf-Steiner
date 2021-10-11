@@ -1,6 +1,6 @@
 footer {
   // height: 100%;
-  padding: 70px;
+  padding: 100px;
 
   .footer-name {
     padding: 50px;
@@ -20,6 +20,14 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 100;
+      font-size: normal;
     }
     .icons {
       display: flex;
