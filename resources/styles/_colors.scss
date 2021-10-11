@@ -7,6 +7,14 @@ $blobBackgroundLightYellow: #fcf8e3;
 $buttonBlue: #2f698d;
 $footerBlue: #05395e;
 $footerTextGreen: #c3d7b4;
+$menuMainLinkBlue: #e0ebf2;
+$menuMainLinkGreen: #e2f5d6;
+$menuMainLinkRed: #f4dee4;
+$menuMainLinkYellow: #fdf6d1;
+$mobileMainLinksBackgroundBlue: #2e698e;
+$mobileNavbarAndMainBlue: #dfebf2;
+$mobileSubLinksBackgroundBlue: #e0ebf2;
+$mobileSubLinksTextBlue: #05395e;
 $navbarAndMainWhite: #fafaff;
 $textBlue: #124467;
 $textGreen: #53892e;
@@ -16,12 +24,12 @@ nav,
 main,
 body,
 html,
-.mobileMenu .subMenuBox,
-.active {
+.subMenuBox {
   background-color: $navbarAndMainWhite;
 }
 
-.applyButton {
+.applyButton,
+.applyButtonBrand {
   background-color: $buttonBlue;
   color: white;
 }
@@ -34,12 +42,13 @@ footer {
   color: $footerTextGreen;
 }
 
-.menuLinks,
-.childLinks {
+.primaryLinks,
+.subLink,
+.intranetLinkHeader {
   color: $textBlue;
 
   &:hover {
-    color: $textPurple;
+    color: $textBlue;
   }
 }
 
@@ -47,11 +56,33 @@ footer {
 $layout-breakpoint-small: 560px;
 
 @media (max-width: $layout-breakpoint-small) {
-  .overlay {
+  body,
+  html {
     background-color: $navbarAndMainWhite;
   }
 
-  .active {
-    background-color: $backgroundLightGreen;
+  .overlay {
+    background-color: white;
+  }
+
+  .primaryLinks {
+    color: #124467;
+  }
+
+  // Classes implemented through JavaScript within nav.js.
+  .menuMainLinkBlue {
+    background-color: $menuMainLinkBlue;
+  }
+
+  .menuMainLinkGreen {
+    background-color: $menuMainLinkGreen;
+  }
+
+  .menuMainLinkYellow {
+    background-color: $menuMainLinkYellow;
+  }
+
+  .menuMainLinkRed {
+    background-color: $menuMainLinkRed;
   }
 }

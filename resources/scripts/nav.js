@@ -1,38 +1,64 @@
 // Desktop menu.
-const menuContainer = document.querySelectorAll(".parentAndChildrenWrapper");
+const menuContainer = document.querySelectorAll(".primaryAndSubWrapper");
 
 menuContainer.forEach((wrapper) => {
-  // Huvudlänkar.
-  const menuButton = wrapper.querySelector(".menuLinks");
-  // Sublänkar.
+  const menuButton = wrapper.querySelector(".primaryLinks");
   const subMenu = wrapper.querySelector(".subMenuBox");
 
   menuButton.addEventListener("click", function (event) {
     event.preventDefault();
 
-    // let activeElements = document.getElementsByClassName("active").length;
-    let activeElements = document.querySelectorAll(".active").length;
-
-    // if (activeElements === 0) {
-    //   subMenu.classList.add("active");
-    // } else {
-    //   subMenu.classList.add("shutdown");
-    // }
+    checkForAlreadyActiveMenus();
 
     subMenu.classList.toggle("active");
   });
 });
 
-// Hamburger menu in mobile view.
-const hamburgerButton = document.querySelector(".hamburgerButton");
-const mobileMenu = document.querySelector(".mobile-menu");
+function checkForAlreadyActiveMenus() {
+  console.log("Ready to remove active classes or maybe display none them!");
+}
 
-hamburgerButton.addEventListener("click", () => {
+// Hamburger menu in mobile view.
+const hamburgerOpenButton = document.querySelector(".hamburgerOpenButton");
+const mobileMenu = document.querySelector(".mobileMenuOverlay");
+
+hamburgerOpenButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("overlay");
 });
 
 // Closing menu while mobile menu is opened.
-const closeMenuButton = document.querySelector(".closeMenuButton");
-closeMenuButton.addEventListener("click", () => {
+const hamburgerCloseButton = document.querySelector(".hamburgerCloseButton");
+hamburgerCloseButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("overlay");
 });
+
+// Mobile menu rainbow colors on main links.
+let mainLink = document.querySelectorAll(".caretLinkWrapper");
+
+const rainbow = [
+  "menuMainLinkBlue",
+  "menuMainLinkGreen",
+  "menuMainLinkYellow",
+  "menuMainLinkRed",
+];
+
+window.addEventListener("resize", function () {
+  if (window.matchMedia("(max-width: 560px)").matches) {
+    //
+  } else {
+    addColors();
+  }
+});
+
+window.onload = () => {
+  if (window.matchMedia("(max-width: 560px)").matches) {
+    addColors();
+  }
+};
+
+function addColors() {
+  mainLink[0].classList.add(rainbow[0]);
+  mainLink[1].classList.add(rainbow[1]);
+  mainLink[2].classList.add(rainbow[2]);
+  mainLink[3].classList.add(rainbow[3]);
+}

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Antropos";
+  src: url("../fonts/Antropos.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+}
+
+h1 {
+  font-family: "Antropos";
+}
+
+.primaryLinks,
+.subLink,
+.intranetLinkHeader,
+.applyButton,
+.applyButtonBrand,
+button {
+  font-family: "Poppins";
+}
+
+.subLink,
+.primaryLinks,
+.intranetLinkHeader {
+  text-decoration: none;
+  white-space: nowrap;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+$layout-breakpoint-small: 560px;
+
+@media (max-width: $layout-breakpoint-small) {
+  .intranetLinkHeader {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .applyButton {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

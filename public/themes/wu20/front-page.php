@@ -17,7 +17,7 @@
     <?php foreach ($latestPosts as $post) : setup_postdata($post); ?>
 
         <div class="rounded card p-5 m-5">
-            <div class="">
+            <div>
                 <?php if (has_post_thumbnail()) {
                     the_post_thumbnail('medium');
                 } ?>
@@ -31,7 +31,7 @@
 
                 <p class="card-text"><?php the_date(); ?></p>
                 <!-- Link to single post or post.php.-->
-                <a class="btn btn-primary" href="<?php the_permalink(); ?>" class="">Läs mer</a>
+                <a class="btn btn-primary" href="<?php the_permalink(); ?>">Läs mer</a>
 
 
             </div>
