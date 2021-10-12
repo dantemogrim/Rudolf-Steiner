@@ -21,6 +21,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('style', get_stylesheet_uri());
 });
 
+
 // Register Staff as a custom post type.
 require get_template_directory() . '/post-types/argument.php';
 require get_template_directory() . '/post-types/arskurs.php';

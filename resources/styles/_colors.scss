@@ -1,45 +1,106 @@
-$darkBlue: #31566f;
-$lightBlue: #e0ebf2;
-$lightGreen: #c3d7b4;
-$lightOrange: #ffd08e;
-$lightPink: #f0dae0;
-$yellow: #dbb75c;
-$mediumBlue: #2f698d;
+$backgroundLightBlue: #eaf0f7;
+$backgroundLightGreen: #e3f5d6;
+$backgroundLightYellow: #fdf6d1;
+$blobBackgroundLightBlue: #eaf0f7;
+$blobBackgroundLightRed: #f4e7ec;
+$blobBackgroundLightYellow: #fcf8e3;
+$buttonBlue: #2f698d;
+$footerBlue: #05395e;
+$footerTextGreen: #c3d7b4;
+$menuMainLinkBlue: #e0ebf2;
+$menuMainLinkGreen: #e2f5d6;
+$menuMainLinkRed: #f4dee4;
+$menuMainLinkYellow: #fdf6d1;
+$mobileMainLinksBackgroundBlue: #2e698e;
+$mobileNavbarAndMainBlue: #dfebf2;
+$mobileSubLinksBackgroundBlue: #e0ebf2;
+$mobileSubLinksTextBlue: #05395e;
+$navbarAndMainWhite: #fafaff;
+$textBlue: #124467;
+$textGreen: #53892e;
+$textPurple: #8d5683;
 
-$paleWhite: #fafaff;
-
-nav {
-  background-color: $paleWhite;
+nav,
+main,
+body,
+html,
+.subMenuBox {
+  background-color: $navbarAndMainWhite;
 }
 
-.loginButton {
-  background-color: $lightOrange;
+// Menylänkar
+h2 {
+  color: #b64259;
 }
 
-.applyButton {
-  background-color: $lightPink;
+// Argumenten h4
+h4 {
+  color: #04495e;
 }
 
-.loginButton,
-.applyButton {
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
+.cardPedagogik {
+  background-color: #e2f5d6;
+}
+
+.cardArskurser {
+  background-color: #e0ebf2;
+}
+
+.applyButton,
+.applyButtonBrand {
+  background-color: $buttonBlue;
+  color: white;
 }
 
 footer {
-  background-color: $darkBlue;
+  background-color: $footerBlue;
 }
 
-.subMenuBox {
-  background-color: $lightGreen;
+.footerTextGreen {
+  color: $footerTextGreen;
 }
 
-.body {
-  background-color: $lightBlue;
+.primaryLinks,
+.subLink,
+.intranetLinkHeader {
+  color: $textBlue;
+
+  &:hover {
+    color: $textBlue;
+  }
 }
 
-.menuLinks,
-.childLinks {
-  color: $mediumBlue;
+// Colors in mobile view.
+$layout-breakpoint-small: 560px;
+
+@media (max-width: $layout-breakpoint-small) {
+  body,
+  html {
+    background-color: $navbarAndMainWhite;
+  }
+
+  .overlay {
+    background-color: white;
+  }
+
+  .primaryLinks {
+    color: #124467;
+  }
+
+  // Classes implemented through JavaScript within nav.js.
+  .menuMainLinkBlue {
+    background-color: $menuMainLinkBlue;
+  }
+
+  .menuMainLinkGreen {
+    background-color: $menuMainLinkGreen;
+  }
+
+  .menuMainLinkYellow {
+    background-color: $menuMainLinkYellow;
+  }
+
+  .menuMainLinkRed {
+    background-color: $menuMainLinkRed;
+  }
 }

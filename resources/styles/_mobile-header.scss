@@ -1,85 +1,189 @@
 $layout-breakpoint-small: 560px;
 
 @media (max-width: $layout-breakpoint-small) {
-  // Hamburger menu on.
-  .overlay {
-    position: fixed;
-    width: 100%;
-    min-height: 100vh;
+  // Hamburger menu off.
+  nav {
+    display: flex;
+    position: sticky;
     top: 0;
-    left: 0;
-    background-color: #e0ebf2;
-    opacity: 1;
-    display: block;
-    z-index: 2;
-    cursor: pointer;
+    height: 100px;
+    align-items: center;
 
-    .menuLinks,
-    .caret {
-      display: flex;
-      // display: block;
-      white-space: nowrap;
-      margin: 30px 0 0 20px;
+    // Hide irrelevant content.
+    .fullMenuContainer {
+      display: none;
     }
 
-    .subMenuBox {
-      position: relative;
-      left: 25px;
-      width: 100vw;
-      background-color: white;
-      top: 5px;
-    }
-
-    .closeMenuIcon,
-    .closeMenuButton {
-      display: block;
-      position: fixed;
-      top: 82px;
-      right: 62px;
-      width: 30px;
+    // Show relevant content.
+    .brand {
+      width: 200px;
+      margin: 0 0 0 10px;
+      left: 10px;
       height: auto;
     }
 
-    nav {
-      width: 0;
-      height: 0;
+    // .applyButtonBrand {
+    //   display: block;
+    //   padding: 5px;
+    //   width: 65px;
+    //   border: none;
+    //   border-radius: 4px;
+    // }
+
+    .hamburgerOpenButton,
+    .hamburgerOpenIcon {
+      background: none;
+      border: none;
       display: block;
-      margin: 100px 0 0 20px;
+      height: auto;
+      position: sticky;
+      text-decoration: none;
+      margin: 0 20px 0 0;
+      top: 25px;
+      width: 35px;
     }
 
-    .loginButton,
-    .applyButton {
-      margin: 30px 0 0 20px;
+    .burgerWrapper {
+      width: 35px;
+      height: auto;
+      margin: 0 20px 0 0;
     }
 
-    main,
-    .logo,
-    footer,
-    .hamburgerButton,
-    .hamburgerIcon {
+    .primaryLinks,
+    .caretBlue,
+    .caretWhite,
+    .intranetLinkHeader {
       display: none;
     }
   }
 
-  // Hamburger menu off.
-  nav {
-    .logo {
-      width: 200px;
-    }
+  // Hamburger menu on.
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
 
-    .hamburgerButton,
-    .hamburgerIcon {
-      display: block;
-      background: none;
-      border: none;
-      text-decoration: none;
-      width: 30px;
-      height: auto;
-    }
+    nav {
+      width: 100vw;
+      display: flex;
+      position: sticky;
+      top: 0;
+      height: 100px;
+      align-items: center;
 
-    .menuLinks,
-    .caret {
-      display: none;
+      // Hide irrelevant content.
+      .hamburgerOpenButton,
+      .hamburgerCloseButon,
+      .caretWhite {
+        display: none;
+      }
+
+      // Show relevant content.
+      .hamburgerCloseIcon,
+      .hamburgerCloseButton,
+      .fullMenuContainer,
+      .caretBlue,
+      .primaryLinks,
+      .intranetLinkHeader {
+        display: block;
+      }
+
+      .brand {
+        width: 200px;
+        margin: 0 0 0 10px;
+        left: 10px;
+        height: auto;
+      }
+
+      .hamburgerCloseIcon,
+      .hamburgerCloseButton {
+        background: none;
+        border: none;
+        display: block;
+        height: auto;
+        position: sticky;
+        text-decoration: none;
+
+        top: 25px;
+        width: 35px;
+      }
+
+      .burgerWrapper {
+        width: 35px;
+        height: auto;
+        margin: 0 20px 0 0;
+      }
+
+      .fullMenuContainer {
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        margin: 0 0 0 0;
+        position: absolute;
+        top: 105px;
+        width: 100vw;
+      }
+
+      .caretBlue {
+        height: auto;
+        width: 20px;
+      }
+
+      .caretLinkWrapper {
+        align-items: center;
+        border-radius: 4px;
+        display: flex;
+        height: 50px;
+        margin: 3px;
+        padding: 10px;
+        width: 95vw;
+      }
+
+      .primaryLinks {
+        margin: 0 0 0 10px;
+      }
+
+      .singleSubLinkContainer {
+        align-items: center;
+        background-color: #fafaff;
+        border-radius: 4px;
+        bottom: 25px;
+        display: flex;
+        height: 30px;
+        left: 2px;
+        margin: 4px 0 0 0;
+        position: relative;
+        width: 95vw;
+      }
+
+      .subLink {
+        color: #05395e;
+        margin: 0 0 0 30px;
+      }
+
+      .subMenuBox {
+        position: relative;
+        padding: 0;
+        top: 30px;
+        background-color: transparent;
+      }
+
+      .intranetApplyWrapper {
+        width: 100vw;
+        justify-content: space-evenly;
+        height: 100px;
+        margin: 0;
+      }
+
+      .applyButton {
+        width: 85px;
+      }
     }
   }
 }

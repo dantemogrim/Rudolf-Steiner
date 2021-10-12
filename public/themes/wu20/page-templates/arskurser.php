@@ -2,46 +2,45 @@
 
 <?php get_header(); ?>
 
-<div>
-    <?php if (have_posts()) : ?>
-
-        <?php while (have_posts()) : the_post(); ?>
-
-            <h2><?php the_title(); ?></h2>
-
-            <?php the_content(); ?>
-
-        <?php endwhile; ?>
-
-    <?php endif; ?>
-</div>
-
-
 <?php
-$arskurser = get_posts(['post_type' => 'arskurs']);
+
+
+$args = [
+    'numberposts' => 3,
+    'post_type' => 'arskurs',
+    'order' => 'asc',
+    'category' => 'Lagstadie'
+];
+
+$argumenten = get_posts($args);
+
+
 ?>
 
-<?php if (count($arskurser)) : ?>
+<?php if (count($argumenten)) : ?>
+
+
+    <h2><?php the_title(); ?></h2>
+
+
     <div>
-        <h3>Läs mer om dessa här:</h3>
 
         <ul>
-            <?php foreach ($arskurser as $post) : setup_postdata($post); ?>
-                <li>
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <?php foreach ($argumenten as $post) : setup_postdata($post); ?>
 
-                    <?php $tools = get_the_terms($post, 'tool'); ?>
-                    <?php if ($tools) : ?>
-                        <p>
-                            Tag:
-                            <?php foreach ($tools as $tool) : ?>
-                                <a href="<?php echo get_term_link($tool) ?>"><?php echo $tool->name; ?></a>
-                            <?php endforeach; ?>
-                        </p>
-                    <?php endif; ?>
-                </li>
+                <div class="card m-3">
+                    <div class="card-body cardArskurser">
+                        <a href="<?php the_permalink(); ?>">
+                            <h4><?php the_title(); ?></h4>
+                            <p class="uppercase">Läs mer</p>
+                        </a>
+                        <?php the_excerpt(); ?>
+                    </div>
+                </div>
+
+
             <?php endforeach; ?>
-        </ul>
+
     </div>
 <?php endif; ?>
 

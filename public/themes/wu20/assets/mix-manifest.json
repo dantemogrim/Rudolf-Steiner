@@ -7,11 +7,15 @@
     "/public/themes/wu20/fonts/Poppins-Regular.woff2": "/public/themes/wu20/fonts/Poppins-Regular.woff2",
     "/public/themes/wu20/icons/Youtube.svg": "/public/themes/wu20/icons/Youtube.svg",
     "/public/themes/wu20/icons/at.svg": "/public/themes/wu20/icons/at.svg",
-    "/public/themes/wu20/icons/caret-down.svg": "/public/themes/wu20/icons/caret-down.svg",
+    "/public/themes/wu20/icons/caret-down-blue.svg": "/public/themes/wu20/icons/caret-down-blue.svg",
+    "/public/themes/wu20/icons/caret-down-white.svg": "/public/themes/wu20/icons/caret-down-white.svg",
     "/public/themes/wu20/icons/facebook.svg": "/public/themes/wu20/icons/facebook.svg",
+    "/public/themes/wu20/icons/globe.svg": "/public/themes/wu20/icons/globe.svg",
     "/public/themes/wu20/icons/instagram.svg": "/public/themes/wu20/icons/instagram.svg",
     "/public/themes/wu20/icons/list.svg": "/public/themes/wu20/icons/list.svg",
     "/public/themes/wu20/icons/logo.svg": "/public/themes/wu20/icons/logo.svg",
     "/public/themes/wu20/icons/logoAndText.svg": "/public/themes/wu20/icons/logoAndText.svg",
-    "/public/themes/wu20/icons/x.svg": "/public/themes/wu20/icons/x.svg"
+    "/public/themes/wu20/icons/sign-in.svg": "/public/themes/wu20/icons/sign-in.svg",
+    "/public/themes/wu20/icons/x.svg": "/public/themes/wu20/icons/x.svg",
+    "/public/themes/wu20/images/video-barnen.png": "/public/themes/wu20/images/video-barnen.png"
 }

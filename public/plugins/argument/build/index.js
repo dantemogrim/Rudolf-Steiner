@@ -2,6 +2,154 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blobDownYellowDesktop.svg":
+/*!***************************************!*\
+  !*** ./src/blobDownYellowDesktop.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "ReactComponent": () => (/* binding */ SvgBlobDownYellowDesktop)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function SvgBlobDownYellowDesktop(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    width: 224,
+    height: 14,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0 0v1.2c.137 0 .61.148 1.45.41C8.264 3.742 39.275 13.44 112 13.44S215.736 3.741 222.55 1.611c.841-.263 1.313-.41 1.45-.41V0H0z",
+    fill: "#FDF6D1"
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjI0IiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgMjI0IDE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAuMDAwMTYxNTExIDBMMC4wMDAxNjE0MDYgMS4yMDAwNEMwLjEzNjg3NSAxLjIwMDA0IDAuNjA5MjMzIDEuMzQ3NzUgMS40NTAxNiAxLjYxMDcyQzguMjYzODkgMy43NDE0MiAzOS4yNzUyIDEzLjQzODkgMTEyIDEzLjQzOUMxODQuNzI1IDEzLjQzOSAyMTUuNzM2IDMuNzQxNDcgMjIyLjU1IDEuNjEwNzRDMjIzLjM5MSAxLjM0Nzc4IDIyMy44NjMgMS4yMDAwNiAyMjQgMS4yMDAwNlYwSDAuMDAwMTYxNTExWiIgZmlsbD0iI0ZERjZEMSIvPgo8L3N2Zz4K");
+
+
+/***/ }),
+
+/***/ "./src/blobDownYellowMobile.svg":
+/*!**************************************!*\
+  !*** ./src/blobDownYellowMobile.svg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "ReactComponent": () => (/* binding */ SvgBlobDownYellowMobile)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function SvgBlobDownYellowMobile(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    width: 224,
+    height: 47,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M0 34.2c1.245 0 30.3 12.239 112 12.239 81.701 0 110.756-12.239 112-12.239V0H0v34.2z",
+    fill: "#FDF6D1"
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjI0IiBoZWlnaHQ9IjQ3IiB2aWV3Qm94PSIwIDAgMjI0IDQ3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMC4wMDAxNjg5MTcgMzQuMkMxLjI0NDYgMzQuMiAzMC4yOTk3IDQ2LjQzODkgMTEyIDQ2LjQzOUMxOTMuNzAxIDQ2LjQzOSAyMjIuNzU2IDM0LjIwMDEgMjI0IDM0LjIwMDFMMjI0IC0zLjgxNDdlLTA2TDAuMDAwMTcxOTA3IC0yLjMzOTc0ZS0wNUwwLjAwMDE2ODkxNyAzNC4yWiIgZmlsbD0iI0ZERjZEMSIvPgo8L3N2Zz4K");
+
+
+/***/ }),
+
+/***/ "./src/blobUpYellowDesktop.svg":
+/*!*************************************!*\
+  !*** ./src/blobUpYellowDesktop.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "ReactComponent": () => (/* binding */ SvgBlobUpYellowDesktop)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function SvgBlobUpYellowDesktop(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    width: 224,
+    height: 13,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.45 11.828c-.84.263-1.313.41-1.45.41V13h224v-.761c-.137 0-.609-.148-1.45-.41C215.736 9.696 184.725-.002 112 0 39.275 0 8.264 9.698 1.45 11.828z",
+    fill: "#FDF6D1"
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjI0IiBoZWlnaHQ9IjEzIiB2aWV3Qm94PSIwIDAgMjI0IDEzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEuNDUwMTYgMTEuODI4MkMwLjYwOTIzMyAxMi4wOTEyIDAuMTM2ODc1IDEyLjIzODkgMC4wMDAxNjE0MDYgMTIuMjM4OUwwLjAwMDE2MTQ3MyAxM0gyMjRWMTIuMjM4OUMyMjMuODYzIDEyLjIzODkgMjIzLjM5MSAxMi4wOTEyIDIyMi41NSAxMS44MjgyQzIxNS43MzYgOS42OTc1IDE4NC43MjUgLTYuNTgxMTZlLTA1IDExMiA5Ljc5MjMxZS0wNkMzOS4yNzUyIDguNTM5NjJlLTA1IDguMjYzODkgOS42OTc1NCAxLjQ1MDE2IDExLjgyODJaIiBmaWxsPSIjRkRGNkQxIi8+Cjwvc3ZnPgo=");
+
+
+/***/ }),
+
+/***/ "./src/blobUpYellowMobile.svg":
+/*!************************************!*\
+  !*** ./src/blobUpYellowMobile.svg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "ReactComponent": () => (/* binding */ SvgBlobUpYellowMobile)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function SvgBlobUpYellowMobile(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    width: 224,
+    height: 47,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M0 12.239C1.245 12.239 30.3 0 112 0c81.701 0 110.756 12.239 112 12.239v34.2H0v-34.2z",
+    fill: "#FDF6D1"
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjI0IiBoZWlnaHQ9IjQ3IiB2aWV3Qm94PSIwIDAgMjI0IDQ3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMC4wMDAxNjE0MDYgMTIuMjM4OUMxLjI0NDYgMTIuMjM4OSAzMC4yOTk3IDkuNDcyNjdlLTA1IDExMiA5Ljc5MjAyZS0wNkMxOTMuNzAxIC03LjUxNDI3ZS0wNSAyMjIuNzU2IDEyLjIzODkgMjI0IDEyLjIzODlMMjI0IDQ2LjQzOUwwLjAwMDE2NDM5NiA0Ni40MzlMMC4wMDAxNjE0MDYgMTIuMjM4OVoiIGZpbGw9IiNGREY2RDEiLz4KPC9zdmc+Cg==");
+
+
+/***/ }),
+
 /***/ "./src/nypil.svg":
 /*!***********************!*\
   !*** ./src/nypil.svg ***!
@@ -242,9 +390,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _nypil_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nypil.svg */ "./src/nypil.svg");
-/* harmony import */ var _kidsbook_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./kidsbook.png */ "./src/kidsbook.png");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _blobDownYellowDesktop_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blobDownYellowDesktop.svg */ "./src/blobDownYellowDesktop.svg");
+/* harmony import */ var _blobDownYellowMobile_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blobDownYellowMobile.svg */ "./src/blobDownYellowMobile.svg");
+/* harmony import */ var _blobUpYellowDesktop_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blobUpYellowDesktop.svg */ "./src/blobUpYellowDesktop.svg");
+/* harmony import */ var _blobUpYellowMobile_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blobUpYellowMobile.svg */ "./src/blobUpYellowMobile.svg");
+/* harmony import */ var _kidsbook_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./kidsbook.png */ "./src/kidsbook.png");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_8__);
 
 
 /**
@@ -252,6 +404,10 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
+
+
+
+
 
 
 
@@ -276,11 +432,17 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "blobUpYellowDesktop",
+    src: _blobUpYellowDesktop_svg__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "blobUpYellowMobile",
+    src: _blobUpYellowMobile_svg__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "outerDiv"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "top-image",
-    src: _kidsbook_png__WEBPACK_IMPORTED_MODULE_3__
+    src: _kidsbook_png__WEBPACK_IMPORTED_MODULE_7__
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "argument_flex-div"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -295,7 +457,13 @@ function save({
     href: attributes.link
   }, "L\xE4s fler anledningar h\xE4r"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: _nypil_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
-  })))));
+  }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "blobDownYellowDesktop",
+    src: _blobDownYellowDesktop_svg__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "blobDownYellowMobile",
+    src: _blobDownYellowMobile_svg__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }));
 }
 
 /***/ }),
