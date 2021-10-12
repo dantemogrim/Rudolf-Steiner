@@ -14,9 +14,9 @@
   padding: 2rem;
   margin-right: 2rem;
   height: 100%;
-  width: calc(100% - 2rem);
   background: white;
   border-radius: 6px;
+  width: calc(100% - 5rem);
 }
 .argument_flex-div h2 {
   color: #7C3D77;
@@ -24,6 +24,11 @@
 @media (min-width: 700px) {
   .argument_flex-div {
     justify-content: space-between;
+  }
+}
+@media (max-width: 650px) {
+  .argument_flex-div {
+    width: calc(100% - 2rem);
   }
 }
 
