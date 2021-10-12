@@ -1,0 +1,25 @@
+.cardsFlexWrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .singleCard {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    .cardImg {
+      width: 300px;
+      height: 300px;
+    }
+
+    .onTop {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

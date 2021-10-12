@@ -36,13 +36,13 @@
                     <?php else : ?>
                         <!-- Parent links. -->
                         <div class="primaryAndSubWrapper">
-                            <div class="caretLinkWrapper">
-                                <img class="caretBlue" src="<?= get_template_directory_uri(); ?>/icons/caret-down-blue.svg" />
-                                <img class="caretWhite" src="<?= get_template_directory_uri(); ?>/icons/caret-down-white.svg" />
-                                <a class="primaryLinks" href="<?= $menuItem->url; ?>">
+                            <a class="primaryLinks" href="<?= $menuItem->url; ?>">
+                                <div class="caretLinkWrapper">
+                                    <img class="caretBlue" src="<?= get_template_directory_uri(); ?>/icons/caret-down-blue.svg" />
+                                    <img class="caretWhite" src="<?= get_template_directory_uri(); ?>/icons/caret-down-white.svg" />
                                     <?= $menuItem->title; ?>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                             <ul class="subMenuBox">
                                 <?php foreach ($menuItem->children as $child) : ?>
                                     <!-- Children links. -->
@@ -61,7 +61,7 @@
 
                 <div class="intranetApplyWrapper">
                     <a class="intranetLinkHeader">
-                        Intranät
+                        Idunsoft
                     </a>
                     <button class="applyButton" type="button">
                         Ansök

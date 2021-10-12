@@ -6,9 +6,10 @@
 
 
 $args = [
-    'numberposts' => -1,
+    'numberposts' => 3,
     'post_type' => 'arskurs',
     'order' => 'asc',
+    'category' => 'Lagstadie'
 ];
 
 $argumenten = get_posts($args);
@@ -31,6 +32,7 @@ $argumenten = get_posts($args);
                     <div class="card-body cardArskurser">
                         <a href="<?php the_permalink(); ?>">
                             <h4><?php the_title(); ?></h4>
+                            <p class="uppercase">Läs mer</p>
                         </a>
                         <?php the_excerpt(); ?>
                     </div>
