@@ -60,7 +60,9 @@ div.topSection .buttonStyle {
 }
 
 div.bottomSection {
-  background: #e0ebf2;
+  background: url(data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIzNzAiIHZpZXdCb3g9IjAgMCAxNDQwIDM3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTS0wLjk5OTk4OSAyNzIuNDg3QzcuMDA1NjMgMjcyLjQ4NyAxOTMuOTE4IDM2OS45OTkgNzE5LjUgMzcwQzEyNDUuMDggMzcwLjAwMSAxNDMxLjk5IDI3Mi40ODcgMTQ0MCAyNzIuNDg3TDE0NDAgOS4xNTUyN2UtMDVMLTAuOTk5OTU5IC03LjU1NDM4ZS0wNkwtMC45OTk5ODkgMjcyLjQ4N1oiIGZpbGw9IiNFQUYwRjciLz4KPC9zdmc+Cg==);
+  background-size: cover;
+  background-position: bottom;
   color: #30576f;
   position: relative;
   flex-direction: column;
@@ -81,6 +83,14 @@ div.bottomSection .h2Input {
 div.bottomSection .pInput {
   border: #30576f 1px solid !important;
   width: 80%;
+}
+div.bottomSection p {
+  max-width: 1000px;
+}
+@media (min-width: 900px) {
+  div.bottomSection p {
+    padding: 2rem;
+  }
 }
 
 .red {
