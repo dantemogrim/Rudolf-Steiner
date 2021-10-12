@@ -13,7 +13,7 @@ div.topSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 70vh;
   position: relative;
   text-shadow: 2px 2px 10px #313131;
@@ -22,6 +22,16 @@ div.topSection {
 }
 div.topSection h1, div.topSection p, div.topSection button, div.topSection input {
   z-index: 1;
+}
+div.topSection h1 {
+  font-size: 50px;
+  margin-top: 80px;
+  max-width: 680px;
+  line-height: 100px;
+}
+div.topSection p {
+  margin-top: -90px;
+  font-size: 28px;
 }
 div.topSection input {
   color: white;
