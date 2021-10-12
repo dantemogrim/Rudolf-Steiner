@@ -16,7 +16,7 @@
     background: white;
 	border-radius: 6px;
 	h2 {
-		color: #ffa72b;
+		color: #7C3D77;
 	}
 	@media (min-width: 700px) {
 		justify-content: space-between;
@@ -41,6 +41,10 @@
 	width: 100%;
     margin-left: -70px;
 	padding: 3rem 0;
+	@media (max-width: 650px) {
+		width: calc(100% - 2rem);
+    	margin-left: 2rem;
+	}
 	
 }
 
