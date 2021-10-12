@@ -50,10 +50,6 @@
 
 .blobMask {
 	mask: url(blob.svg);
-	@media (min-width: 650px) {
-		mask: url(longBlob.svg);
-		mask-size: 100% 100%;
-	}
 	mask-size: 100% 100%;
 }
 
@@ -65,10 +61,6 @@
 
 .blobMaskInverted {
 	mask: url(invertedBlob.svg);
-	@media (min-width: 650px) {
-		mask: url(longBlob.svg);
-		mask-size: 100% 100%;
-	}
 	width: 100%;
 	height: 100%;
 	mask-size: 100% 100%;
@@ -116,6 +108,14 @@
 		}
 	}
 	.upperText {
+		@media (min-width:650px) {
+			width: 240px;
+		}
+		@media (max-width: 650px) {
+			text-align: center;
+		}
+	}
+	.upperTextRight {
 		@media (max-width: 650px) {
 			text-align: center;
 		}
@@ -124,9 +124,11 @@
 
 .textLeftContainer {
 	@media (min-width: 650px) {
-		padding: 6rem 3rem !important;
+		padding: 3rem 4rem !important;
+		margin-top: 20px;
 		margin-left: -5rem;
 		padding-left: 6rem;
+		text-align: initial !important;
 	 }
 	 padding: 4rem !important;
 	 @media (max-width: 650px) {

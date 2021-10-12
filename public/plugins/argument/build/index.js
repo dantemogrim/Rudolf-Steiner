@@ -440,10 +440,14 @@ function save({
     src: _blobUpYellowMobile_svg__WEBPACK_IMPORTED_MODULE_6__["default"]
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "outerDiv"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "argument_imageContainer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "top-image",
     src: _kidsbook_png__WEBPACK_IMPORTED_MODULE_7__
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "argument_flex-div-container"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "argument_flex-div"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "upperContainer"
@@ -457,7 +461,7 @@ function save({
     href: attributes.link
   }, "L\xE4s fler anledningar h\xE4r"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: _nypil_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+  })))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "blobDownYellowDesktop",
     src: _blobDownYellowDesktop_svg__WEBPACK_IMPORTED_MODULE_3__["default"]
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {

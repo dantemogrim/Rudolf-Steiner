@@ -6,12 +6,15 @@
  */
 
 .argument_flex-div {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	background: #fdf6d1;
 	padding: 2rem;
+	margin-right: 2rem;
+    height: 100%;
+    width: calc(100% - 2rem);
+    background: white;
+	border-radius: 6px;
 	h2 {
 		color: #ffa72b;
 	}
@@ -23,17 +26,30 @@
 .outerDiv {
 	display: flex;
 	flex-direction: column;
+	background: #FDF6D1;
 	@media (min-width: 700px) {
 		flex-direction: row;
 	}
 }
 
+.argument_imageContainer {
+	padding: 2rem;
+    background: #FDF6D1;
+}
+
+.argument_flex-div-container {
+	width: 100%;
+    margin-left: -70px;
+	padding: 3rem 0;
+	
+}
+
 .top-image {
 	width: 100%;
 	height: 300px;
+	border-radius: 6px;
 	object-fit: cover;
 	@media (min-width: 700px) {
-		width: 45%;
 		height: 300px;
 	}
 }

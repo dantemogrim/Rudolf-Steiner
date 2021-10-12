@@ -362,7 +362,7 @@ function save({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "textContainer textRightContainer blobMaskInverted ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "upperText textRightP"
+    className: "upperTextRight textRightP"
   }, attributes.text), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "lowerText textRightName ".concat(nameClass)
   }, attributes.name)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -382,7 +382,7 @@ function save({
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "textContainer textLeftContainer blobMask ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "upperText textRightP"
+    className: "upperText"
   }, attributes.text), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "lowerText textRightName ".concat(nameClass)
   }, attributes.name)))));

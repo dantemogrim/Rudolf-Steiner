@@ -35,20 +35,24 @@ export default function save({ attributes }) {
 			<img className="blobUpYellowMobile" src={blobUpYellowMobile}></img>
 
 			<div className="outerDiv">
-				<img className="top-image" src={kids}></img>
-				<div className="argument_flex-div">
-					<div className="upperContainer">
-						<h2>{attributes.h1}</h2>
-						<p>{attributes.p}</p>
-					</div>
-					<a className="blackLink" href={attributes.link}>
-						<div className="arrow-flex">
-							<p className="noMargin" href={attributes.link}>
-								Läs fler anledningar här
-							</p>
-							<img src={pil}></img>
+				<div className='argument_imageContainer'>
+					<img className="top-image" src={kids}></img>
+				</div>
+				<div className="argument_flex-div-container">
+					<div className="argument_flex-div">
+						<div className="upperContainer">
+							<h2>{attributes.h1}</h2>
+							<p>{attributes.p}</p>
 						</div>
-					</a>
+						<a className="blackLink" href={attributes.link}>
+							<div className="arrow-flex">
+								<p className="noMargin" href={attributes.link}>
+									Läs fler anledningar här
+								</p>
+									<img src={pil}></img>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 

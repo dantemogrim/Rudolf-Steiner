@@ -45,7 +45,7 @@ export default function save({ attributes }) {
 			<div className='moveRight outerContainer'>
 				<div className={`flexContainerNew flexContainerRight`}>
 					<div className={`textContainer textRightContainer blobMaskInverted ${bgClass}`}>
-						<p className='upperText textRightP'>{attributes.text}</p>
+						<p className='upperTextRight textRightP'>{attributes.text}</p>
 						<p className={`lowerText textRightName ${nameClass}`}>{attributes.name}</p>
 					</div>
 					<div className='imageContainer'>
@@ -62,7 +62,7 @@ export default function save({ attributes }) {
 						<img src={attributes.mediaUrl}></img>
 					</div>
 					<div className={`textContainer textLeftContainer blobMask ${bgClass}`}>
-						<p className='upperText textRightP'>{attributes.text}</p>
+						<p className='upperText'>{attributes.text}</p>
 						<p className={`lowerText textRightName ${nameClass}`}>{attributes.name}</p>
 					</div>
 				</div>
