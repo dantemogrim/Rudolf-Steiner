@@ -4,16 +4,14 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-
-.flexContainer {
-	--blockHeight: 200px;
+:root {
+	--blockHeight: 250px;
 	--person_padding: 2rem;
+}
 
-	@media (max-width: 650px) {
-		flex-direction: column;
-		height: auto;
-		text-align: center;
-	}
+.flexContainerNew {
+	min-width: 600px;
+	max-width: 52rem;
 	@media (max-width: 650px) {
 		flex-direction: column;
 		height: auto;
@@ -23,19 +21,69 @@
 	flex-direction: row;
 	align-items: center;
 	position: relative;
-	height: var(--blockHeight);
-	padding: var(--person_padding);
+	padding: 0rem 5rem;
+	margin-bottom: -1rem;
 	gap: var(--person_padding);
-	background: #FDF6D1;
+	justify-content: center;
 	@media (min-width: 1110px) {
-		justify-content: center;
 	}
+}
+
+.outerContainer {
+	width: 1200px !important;
+}
+
+.outerOuterContainer {
+	@media (max-width: 650px) {
+		margin-bottom: 2rem;
+	}
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .flexContainerRight {
 	@media (max-width: 650px) {
+		flex-direction: column-reverse;
+	 }
+}
+
+.blobMask {
+	mask: url(blob.svg);
+	@media (min-width: 650px) {
+		mask: url(longBlob.svg);
+		mask-size: 100% 100%;
+	}
+	mask-size: 100% 100%;
+}
+
+.moveRight {
+	display: flex;
+	width: 100%;
+	justify-content: end;
+}
+
+.blobMaskInverted {
+	mask: url(invertedBlob.svg);
+	@media (min-width: 650px) {
+		mask: url(longBlob.svg);
+		mask-size: 100% 100%;
+	}
+	width: 100%;
+	height: 100%;
+	mask-size: 100% 100%;
+	position: relative;
+}
+
+.textRightContainer {
+	@media (max-width: 650px) {
 		flex-direction: column-reverse !important;
 	}
+	@media (min-width: 650px) {
+		padding: 6rem 3rem;
+		margin-right: -5rem;
+		padding-right: 6rem;
+	 }
 }
 
 .imageContainer {
@@ -48,10 +96,15 @@
 		border-radius: 50%;
 		object-fit: cover;
 	}
+	z-index: 1;
 }
 
 .textContainer {
+	z-index: -3 !important;
+	padding: 7rem 4rem;
+	padding-top: 136px;
 	@media (max-width: 650px) {
+		margin-top: -8rem;
 		max-width: calc(100% - var(--person_padding));
 	}
 	max-width: calc(100% - var(--blockHeight) + var(--person_padding));
@@ -67,6 +120,18 @@
 			text-align: center;
 		}
 	}
+}
+
+.textLeftContainer {
+	@media (min-width: 650px) {
+		padding: 6rem 3rem !important;
+		margin-left: -5rem;
+		padding-left: 6rem;
+	 }
+	 padding: 4rem !important;
+	 @media (max-width: 650px) {
+		 margin-top: -5rem !important;
+	 }
 }
 
 .person_nameBlue {

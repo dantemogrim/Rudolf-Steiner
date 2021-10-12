@@ -145,7 +145,7 @@ console.log(value)
 			{
 			attributes.inverted ? 
 			<div className={`flexContainer flexContainerRight ${bgClass}`}>
-				<div className="textContainer textRightContainer" >
+				<div className="textContainer moveHigher textRightContainer" >
 					<textarea onChange={changeTextHandler} rows="4" className='textRightP upperText person_input' defaultValue={attributes.text}/>
 					<input onChange={changeNameHandler} className={`textRightName lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
 				</div>
@@ -158,7 +158,7 @@ console.log(value)
 				<div className='imageContainer'>
 					<img src={attributes.mediaUrl}></img>
 				</div>
-				<div className="textContainer" >
+				<div className="textContainer moveHigher" >
 					<textarea onChange={changeTextHandler} rows="4" className='upperText person_input' defaultValue={attributes.text}/>
 					<input onChange={changeNameHandler} className={`lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
 				</div>
