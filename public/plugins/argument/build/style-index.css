@@ -28,6 +28,7 @@
 }
 
 .outerDiv {
+  width: 104%;
   display: flex;
   flex-direction: column;
   background: #FDF6D1;
