@@ -25,9 +25,9 @@ export default function save({ attributes }) {
 
 	let bgClass
 	let nameClass
-	if(attributes.color === 'white') {
-		bgClass = 'person_bgWhite'
-		nameClass = 'person_nameWhite'
+	if(attributes.color === 'green') {
+		bgClass = 'person_bgGreen'
+		nameClass = 'person_nameGreen'
 	} 
 	if(attributes.color === 'yellow') {
 		bgClass = 'person_bgYellow'

@@ -108,7 +108,7 @@
   width: calc(var(--blockHeight) - var(--person_padding) * 2);
   height: calc(var(--blockHeight) - var(--person_padding) * 2);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .imageContainer img {
   height: 100%;
@@ -118,7 +118,7 @@
 }
 
 .textContainer {
-  z-index: -3 !important;
+  z-index: 1 !important;
   padding: 7rem 4rem;
   padding-top: 136px;
   max-width: calc(100% - var(--blockHeight) + var(--person_padding));
@@ -176,12 +176,12 @@
   background: #FDF6D1 !important;
 }
 
-.person_nameWhite {
-  color: #8FB574 !important;
+.person_nameGreen {
+  color: #04395E !important;
 }
 
-.person_bgWhite {
-  background: #FAFAFF !important;
+.person_bgGreen {
+  background: #E3F5D6 !important;
 }
 
 .textRightName {

@@ -103,7 +103,7 @@ function Edit({
   const changeColorHandler = e => {
     const value = e.currentTarget.value;
 
-    if (value === 'blue' || value === 'yellow' || value === 'white') {
+    if (value === 'blue' || value === 'yellow' || value === 'green') {
       setAttributes({
         color: value
       });
@@ -116,9 +116,9 @@ function Edit({
   let bgClass;
   let nameClass;
 
-  if (attributes.color === 'white') {
-    bgClass = 'person_bgWhite';
-    nameClass = 'person_nameWhite';
+  if (attributes.color === 'green') {
+    bgClass = 'person_bgGreen';
+    nameClass = 'person_nameGreen';
   }
 
   if (attributes.color === 'yellow') {
@@ -158,7 +158,7 @@ function Edit({
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     onChange: changeColorHandler,
-    placeholder: "blue | white | yellow",
+    placeholder: "blue | green | yellow",
     defaultValue: attributes.color
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Invert"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     checked: attributes.inverted,
@@ -338,9 +338,9 @@ function save({
   let bgClass;
   let nameClass;
 
-  if (attributes.color === 'white') {
-    bgClass = 'person_bgWhite';
-    nameClass = 'person_nameWhite';
+  if (attributes.color === 'green') {
+    bgClass = 'person_bgGreen';
+    nameClass = 'person_nameGreen';
   }
 
   if (attributes.color === 'yellow') {
