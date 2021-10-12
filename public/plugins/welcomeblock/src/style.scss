@@ -27,11 +27,18 @@ div.topSection {
 		margin-top: 80px;
 		max-width: 680px;
 		line-height: 100px;
+		@media (max-width: 650px) {
+			font-size: 30px;
+			line-height: 49px;
+		}
 	}
 
 	p {
 		margin-top: -90px;
 		font-size: 28px;
+		@media (max-width: 650px) {
+			font-size: 22px;
+		}
 	}
 
 	input {

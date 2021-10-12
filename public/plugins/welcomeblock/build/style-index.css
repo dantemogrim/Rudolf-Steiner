@@ -29,9 +29,20 @@ div.topSection h1 {
   max-width: 680px;
   line-height: 100px;
 }
+@media (max-width: 650px) {
+  div.topSection h1 {
+    font-size: 30px;
+    line-height: 49px;
+  }
+}
 div.topSection p {
   margin-top: -90px;
   font-size: 28px;
+}
+@media (max-width: 650px) {
+  div.topSection p {
+    font-size: 22px;
+  }
 }
 div.topSection input {
   color: white;
