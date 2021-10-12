@@ -1,0 +1,33 @@
+$layout-breakpoint-small: 560px;
+
+@media (max-width: $layout-breakpoint-small) {
+  .blobAndHeadingWrapper {
+    position: relative;
+
+    .greenBlobDesktop {
+      display: none;
+    }
+
+    .greenBlobMobile {
+      display: block;
+      width: 100vw;
+      height: auto;
+    }
+
+    .textWrapper > h2 {
+      position: absolute;
+      font-size: 20px;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .underrubrik {
+    display: none;
+  }
+
+  .excerpt {
+    display: none;
+  }
+}

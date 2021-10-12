@@ -1,35 +1,38 @@
-<!-- Shows a single post as a page. Works in "Aktuellt". -->
+<!-- Shows a single post as a page. Works in "Årskurser" for example. -->
 <?php get_header(); ?>
+
 <?php if (have_posts()) : ?>
 
     <?php while (have_posts()) : the_post(); ?>
 
+        <div class="singleContainer">
+            <div class="singlePostCard">
+                <div class="thumbnailHeadingWrapper">
 
-        <div class="flex flex-col bg-white rounded-lg p-5 m-5">
+                    <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail('medium', array('class' => 'singlePostThumbnail'));
+                    } ?>
 
-            <div>
-                <?php if (has_post_thumbnail()) {
-                    the_post_thumbnail('medium');
-                } ?>
-            </div>
+                    <img class="singlePostBlob" src="<?= get_template_directory_uri(); ?>/images/blob.svg" />
+                    <h1 class="singlePostHeading"><?php the_title(); ?></h1>
 
-            <div class="flex flex-col items-start mt-4">
-                <h1 class="text-xl font-bold"><?php the_title(); ?></h1>
-                </a>
-                <p><?php the_content(); ?></p>
+                </div>
 
-                <p class="text-blue-700"><?php the_date(); ?></p>
+                <div class="content"><?php the_content(); ?></div>
 
                 <!-- Link to all posts in Aktuellt/index.php. -->
                 <?php $blogPageUrl = get_permalink(get_option('page_for_posts')); ?>
-                <a href="<?= $blogPageUrl; ?>">Se fler inlägg</a>
+                <a class="" href="<?= $blogPageUrl; ?>"><button>Tillbaka</button></a>
+
             </div>
         </div>
     <?php endwhile;
 else : ?>
     <article>
-        <p>Inga inlägg att visa i nuläget.</p>
+        <p>Inget innehåll att visa i nuläget.</p>
     </article>
 <?php endif; ?>
+
+
 
 <?php get_footer(); ?>

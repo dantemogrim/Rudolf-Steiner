@@ -6,29 +6,6 @@
 
 A collaborative mission to update the website for Ruben Steinerskolan in Göteborg.
 
-## :man_factory_worker: Backlog
-
-**General:**
-
-      _Template content for:_
-
-- [ ] "Ansökan".
-- [ ] "Undervisning".
-- [ ] "Föräldrar".
-- [ ] "Kontakt".
-- [ ] "Om Oss".
-
-**Gutenberg Block ideas:**
-
-- [ ] CSS clip path/SVG blob where the user can type text on top.
-
-**Domain:**
-
-- [ ] Add the school's texts.
-- [ ] Rsync + GitHub Actions workflow as FTP tool.
-- [x] Implement (new) logo.
-- [ ] Relevant image and database content.
-
 ## :pushpin: Instructions
 
 After cloning down the directory do the following:
@@ -58,6 +35,9 @@ From the root folder, start up a local server with:
 
 ## :globe_with_meridians: WordPress Settings
 
+<details><summary>📚 <i>This is going to be a long one.</i>
+</summary>
+
 Once you have your localhost up and running and passed sign up or login, set these changes from your Dashboard to get a better idea on how this project is structured:
 
 > _Can't find Dashboard? In your URL type: `localhost:8000/wp-admin`_.
@@ -68,14 +48,9 @@ Once you have your localhost up and running and passed sign up or login, set the
 
 **Go to Pages and add the following pages:**
 
-- Aktuellt
-- Ansökan
-- Föräldrar (alt. Vårdnadshavare)
 - Hem
 - Kontakt
-- Om Oss
-- Pedagogik
-- Undervisning
+- Årskurser
 
 _Don't forget to publish these one by one._
 
@@ -85,16 +60,31 @@ Create a new menu and give it the name `header-menu`.
 Select all pages except "Hem" to your new menu.
 Drag and drop your pages so the structure looks like this:
 
-- Om Oss
-- Undervisning
-  - Pedagogik _sub item_
-  - Årskurser _sub item_
-- Aktuellt
-- Föräldrar
-- Kontakt
-- Ansökan
+> - **Om Oss** \*
+>   - Medarbetare \*
+>   - Styrelse \*
+>   - Vår Värdegrund \*
+> - **Undervisning** \*
+>   - Alumner \*
+>   - Vår Värdegrund \*
+>   - Vår Värdegrund \*
+>   - Waldorfpedagogik \*
+>   - Årskurser
+> - **Aktuellt** \*
+>
+>   - Nyhetsflöde \*
+>   - Skolmaten \*
+>   - Viktiga Datum \*
+>
+> - **Kontakt** \*
+>   - Elevhälsan \*
+>   - Hitta Hit \*
 
-Then under "Menu Settings" check the following boxes:
+> \* Set these as custom links and give them the url "#".
+
+> If they're indented, drag and drop the link one step to the right to make them a sub item.
+
+Under "Menu Settings" check the following box:
 
 - [x] "Header Menu"
 
@@ -106,7 +96,6 @@ Within the "Your homepage displays" options do the following:
 
 - Check the box for "A static page (select below)".
 - Select "Homepage" as "Hem".
-- Select "Posts page" as "Aktuellt".
 
 _Save your changes and publish._
 
@@ -117,7 +106,7 @@ _Save your changes and publish._
 Choose the following:
 
 - [x] Custom structure.
-- Within the input field choose `%postname%`.
+- Within the input field choose `%category%` followed by `%postname%`.
 
 _Save your changes._
 
@@ -131,12 +120,14 @@ _**Optional: In Settings -> General.**_
 - In "Time Format" switch to `H:i`.
 - _Extra optional: If you're not debugging/working change "Site Language" to "Svenska"._
 
+</details>
+
 ---
 
 ## :clamp: Tools
 
-- [Gutenberg](https://github.com/WordPress/gutenberg): for creating custom blocks.
-- [WordPlate](https://github.com/wordplate/wordplate#readme): WordPress wrapper for working locally.
+- [Gutenberg](https://github.com/WordPress/gutenberg): Custom blocks.
+- [WordPlate](https://github.com/wordplate/wordplate#readme): Wrapper for working locally.
 - [WordPress](https://wordpress.org/): CMS.
 
 ---
