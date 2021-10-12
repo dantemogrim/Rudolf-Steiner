@@ -4,7 +4,4 @@
 
 <h2><?= the_title(); ?></h2>
 
-
-
-
 <?php get_footer(); ?>

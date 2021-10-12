@@ -1,0 +1,50 @@
+.blobAndHeadingWrapper {
+  position: relative;
+
+  .greenBlobDesktop {
+    width: 100vw;
+    height: auto;
+  }
+
+  .greenBlobMobile {
+    display: none;
+  }
+
+  h2 {
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.singleCard {
+  position: relative;
+  text-align: center;
+  flex: 1 30%;
+  margin: 20px 10px 20px 10px;
+}
+
+.textWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  > h4 {
+    font-size: 35px;
+  }
+}

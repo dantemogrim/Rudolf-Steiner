@@ -22,14 +22,6 @@ $layout-breakpoint-small: 560px;
       height: auto;
     }
 
-    // .applyButtonBrand {
-    //   display: block;
-    //   padding: 5px;
-    //   width: 65px;
-    //   border: none;
-    //   border-radius: 4px;
-    // }
-
     .hamburgerOpenButton,
     .hamburgerOpenIcon {
       background: none;
@@ -109,7 +101,6 @@ $layout-breakpoint-small: 560px;
         height: auto;
         position: sticky;
         text-decoration: none;
-
         top: 25px;
         width: 35px;
       }

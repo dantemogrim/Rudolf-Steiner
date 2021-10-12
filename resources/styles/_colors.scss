@@ -21,21 +21,21 @@ $textGreen: #53892e;
 $textPurple: #8d5683;
 
 nav,
-main,
-body,
-html,
 .subMenuBox {
   background-color: $navbarAndMainWhite;
 }
 
-// Menylänkar
-h2 {
-  color: #b64259;
+// Årskurser
+.arskurser {
+  color: #2f698d;
 }
 
-// Argumenten h4
-h4 {
-  color: #04495e;
+.underrubrik {
+  color: #1f506d;
+}
+
+.textWrapper {
+  color: white;
 }
 
 .cardPedagogik,

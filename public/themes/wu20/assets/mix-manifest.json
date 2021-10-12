@@ -2,9 +2,9 @@
     "/dist/app.js": "/dist/app.js",
     "/dist/nav.js": "/dist/nav.js",
     "/dist/app.css": "/dist/app.css",
+    "/public/themes/wu20/fonts/Antropos.woff2": "/public/themes/wu20/fonts/Antropos.woff2",
     "/public/themes/wu20/fonts/Poppins-Bold.woff2": "/public/themes/wu20/fonts/Poppins-Bold.woff2",
     "/public/themes/wu20/fonts/Poppins-Regular.woff2": "/public/themes/wu20/fonts/Poppins-Regular.woff2",
-    "/public/themes/wu20/fonts/antropos.woff2": "/public/themes/wu20/fonts/antropos.woff2",
     "/public/themes/wu20/icons/Youtube.svg": "/public/themes/wu20/icons/Youtube.svg",
     "/public/themes/wu20/icons/at.svg": "/public/themes/wu20/icons/at.svg",
     "/public/themes/wu20/icons/caret-down-blue.svg": "/public/themes/wu20/icons/caret-down-blue.svg",
@@ -17,5 +17,9 @@
     "/public/themes/wu20/icons/logoAndText.svg": "/public/themes/wu20/icons/logoAndText.svg",
     "/public/themes/wu20/icons/sign-in.svg": "/public/themes/wu20/icons/sign-in.svg",
     "/public/themes/wu20/icons/x.svg": "/public/themes/wu20/icons/x.svg",
-    "/public/themes/wu20/images/video-barnen.png": "/public/themes/wu20/images/video-barnen.png"
+    "/public/themes/wu20/images/blob.svg": "/public/themes/wu20/images/blob.svg",
+    "/public/themes/wu20/images/blobBannerGreenDesktop.svg": "/public/themes/wu20/images/blobBannerGreenDesktop.svg",
+    "/public/themes/wu20/images/blobBannerGreenMobile.svg": "/public/themes/wu20/images/blobBannerGreenMobile.svg",
+    "/public/themes/wu20/images/favicon.png": "/public/themes/wu20/images/favicon.png",
+    "/public/themes/wu20/images/pattern.svg": "/public/themes/wu20/images/pattern.svg"
 }
