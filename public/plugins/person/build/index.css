@@ -17,6 +17,10 @@
   }
 }
 
+.moveHigher {
+  z-index: 400 !important;
+}
+
 .upperText {
   color: black;
 }

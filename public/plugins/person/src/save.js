@@ -25,9 +25,9 @@ export default function save({ attributes }) {
 
 	let bgClass
 	let nameClass
-	if(attributes.color === 'white') {
-		bgClass = 'person_bgWhite'
-		nameClass = 'person_nameWhite'
+	if(attributes.color === 'green') {
+		bgClass = 'person_bgGreen'
+		nameClass = 'person_nameGreen'
 	} 
 	if(attributes.color === 'yellow') {
 		bgClass = 'person_bgYellow'
@@ -41,24 +41,42 @@ export default function save({ attributes }) {
 	return (
 
 		attributes.inverted ? 
-		<div className={`flexContainer flexContainerRight ${bgClass}`}>
-			<div className='textContainer textRightContainer'>
-				<p className='upperText textRightP'>{attributes.text}</p>
-				<p className={`lowerText textRightName ${nameClass}`}>{attributes.name}</p>
-			</div>
-			<div className='imageContainer'>
-				<img src={attributes.mediaUrl}></img>
+		<div className='outerOuterContainer'>
+			<div className='moveRight outerContainer'>
+				<div className={`flexContainerNew flexContainerRight`}>
+					<div className={`textContainer textRightContainer blobMaskInverted ${bgClass}`}>
+						<p className='upperText textRightP'>{attributes.text}</p>
+						<p className={`lowerText textRightName ${nameClass}`}>{attributes.name}</p>
+					</div>
+					<div className='imageContainer'>
+						<img src={attributes.mediaUrl}></img>
+					</div>
+				</div>
 			</div>
 		</div>
 		:
-		<div className={`flexContainer ${bgClass}`}>
-		<div className='imageContainer'>
-			<img src={attributes.mediaUrl}></img>
+		<div className='outerOuterContainer'>
+			<div className='outerContainer'>
+				<div className={`flexContainerNew`}>
+					<div className='imageContainer'>
+						<img src={attributes.mediaUrl}></img>
+					</div>
+					<div className={`textContainer textLeftContainer blobMask ${bgClass}`}>
+						<p className='upperText textRightP'>{attributes.text}</p>
+						<p className={`lowerText textRightName ${nameClass}`}>{attributes.name}</p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div className='textContainer'>
-			<p className='upperText'>{attributes.text}</p>
-			<p className={`lowerText ${nameClass}`}>{attributes.name}</p>
-		</div>
-	</div> 
 	);
 }
+
+{/* <div className={`flexContainerNew ${bgClass} blobMask`}>
+<div className='imageContainer'>
+	<img src={attributes.mediaUrl}></img>
+</div>
+<div className='textContainer'>
+	<p className='upperText'>{attributes.text}</p>
+	<p className={`lowerText ${nameClass}`}>{attributes.name}</p>
+</div>
+</div>  */}

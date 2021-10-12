@@ -103,7 +103,7 @@ function Edit({
   const changeColorHandler = e => {
     const value = e.currentTarget.value;
 
-    if (value === 'blue' || value === 'yellow' || value === 'white') {
+    if (value === 'blue' || value === 'yellow' || value === 'green') {
       setAttributes({
         color: value
       });
@@ -116,9 +116,9 @@ function Edit({
   let bgClass;
   let nameClass;
 
-  if (attributes.color === 'white') {
-    bgClass = 'person_bgWhite';
-    nameClass = 'person_nameWhite';
+  if (attributes.color === 'green') {
+    bgClass = 'person_bgGreen';
+    nameClass = 'person_nameGreen';
   }
 
   if (attributes.color === 'yellow') {
@@ -158,7 +158,7 @@ function Edit({
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     onChange: changeColorHandler,
-    placeholder: "blue | white | yellow",
+    placeholder: "blue | green | yellow",
     defaultValue: attributes.color
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Invert"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     checked: attributes.inverted,
@@ -167,7 +167,7 @@ function Edit({
   }))), attributes.inverted ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "flexContainer flexContainerRight ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "textContainer textRightContainer"
+    className: "textContainer moveHigher textRightContainer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
     onChange: changeTextHandler,
     rows: "4",
@@ -188,7 +188,7 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: attributes.mediaUrl
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "textContainer"
+    className: "textContainer moveHigher"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
     onChange: changeTextHandler,
     rows: "4",
@@ -338,9 +338,9 @@ function save({
   let bgClass;
   let nameClass;
 
-  if (attributes.color === 'white') {
-    bgClass = 'person_bgWhite';
-    nameClass = 'person_nameWhite';
+  if (attributes.color === 'green') {
+    bgClass = 'person_bgGreen';
+    nameClass = 'person_nameGreen';
   }
 
   if (attributes.color === 'yellow') {
@@ -354,9 +354,13 @@ function save({
   }
 
   return attributes.inverted ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "flexContainer flexContainerRight ".concat(bgClass)
+    className: "outerOuterContainer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "textContainer textRightContainer"
+    className: "moveRight outerContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flexContainerNew flexContainerRight"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "textContainer textRightContainer blobMaskInverted ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "upperText textRightP"
   }, attributes.text), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -365,19 +369,34 @@ function save({
     className: "imageContainer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: attributes.mediaUrl
-  }))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "flexContainer ".concat(bgClass)
+  }))))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "outerOuterContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "outerContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flexContainerNew"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "imageContainer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: attributes.mediaUrl
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "textContainer"
+    className: "textContainer textLeftContainer blobMask ".concat(bgClass)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "upperText"
+    className: "upperText textRightP"
   }, attributes.text), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "lowerText ".concat(nameClass)
-  }, attributes.name)));
+    className: "lowerText textRightName ".concat(nameClass)
+  }, attributes.name)))));
+}
+{
+  /* <div className={`flexContainerNew ${bgClass} blobMask`}>
+  <div className='imageContainer'>
+  <img src={attributes.mediaUrl}></img>
+  </div>
+  <div className='textContainer'>
+  <p className='upperText'>{attributes.text}</p>
+  <p className={`lowerText ${nameClass}`}>{attributes.name}</p>
+  </div>
+  </div>  */
 }
 
 /***/ }),

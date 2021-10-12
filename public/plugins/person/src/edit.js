@@ -69,7 +69,7 @@ export default function Edit({ media, attributes, setAttributes }) {
 	}
 	const changeColorHandler = (e) => {
 		const value = e.currentTarget.value;
-		if(value === 'blue' || value === 'yellow' || value === 'white') {
+		if(value === 'blue' || value === 'yellow' || value === 'green') {
 			setAttributes({
 				color: value
 			})
@@ -80,9 +80,9 @@ console.log(value)
 
 	let bgClass
 	let nameClass
-	if(attributes.color === 'white') {
-		bgClass = 'person_bgWhite'
-		nameClass = 'person_nameWhite'
+	if(attributes.color === 'green') {
+		bgClass = 'person_bgGreen'
+		nameClass = 'person_nameGreen'
 	} 
 	if(attributes.color === 'yellow') {
 		bgClass = 'person_bgYellow'
@@ -135,7 +135,7 @@ console.log(value)
 					title='Chose color'
 					initialOpen={ true }
 					>
-				<input onChange={changeColorHandler} placeholder='blue | white | yellow' defaultValue={attributes.color}/>
+				<input onChange={changeColorHandler} placeholder='blue | green | yellow' defaultValue={attributes.color}/>
 				</PanelBody>
 				<PanelBody>
 					<p>Invert</p>
@@ -145,7 +145,7 @@ console.log(value)
 			{
 			attributes.inverted ? 
 			<div className={`flexContainer flexContainerRight ${bgClass}`}>
-				<div className="textContainer textRightContainer" >
+				<div className="textContainer moveHigher textRightContainer" >
 					<textarea onChange={changeTextHandler} rows="4" className='textRightP upperText person_input' defaultValue={attributes.text}/>
 					<input onChange={changeNameHandler} className={`textRightName lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
 				</div>
@@ -158,7 +158,7 @@ console.log(value)
 				<div className='imageContainer'>
 					<img src={attributes.mediaUrl}></img>
 				</div>
-				<div className="textContainer" >
+				<div className="textContainer moveHigher" >
 					<textarea onChange={changeTextHandler} rows="4" className='upperText person_input' defaultValue={attributes.text}/>
 					<input onChange={changeNameHandler} className={`lowerText person_input ${nameClass}`} defaultValue={attributes.name}/> 
 				</div>
