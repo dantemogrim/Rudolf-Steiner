@@ -68,6 +68,7 @@
 }
 
 .textRightContainer {
+	width: 520px;
 	@media (max-width: 650px) {
 		flex-direction: column-reverse !important;
 	}

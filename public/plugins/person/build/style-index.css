@@ -75,6 +75,9 @@
   position: relative;
 }
 
+.textRightContainer {
+  width: 520px;
+}
 @media (max-width: 650px) {
   .textRightContainer {
     flex-direction: column-reverse !important;
