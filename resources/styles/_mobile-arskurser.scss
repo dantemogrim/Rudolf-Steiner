@@ -16,8 +16,8 @@ $layout-breakpoint-small: 560px;
 
     h2 {
       position: absolute;
-      font-size: 35px;
-      top: 35%;
+      font-size: 40px;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -31,25 +31,37 @@ $layout-breakpoint-small: 560px;
     flex: 1 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 20px 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
     width: 350px;
-    height: 370px;
-    border-radius: 8px;
+    height: 430px;
+    border-radius: 6px;
 
     img {
       border-radius: 8px;
     }
 
+    .textWrapper {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      > h4 {
+        font-size: 45px;
+      }
+    }
+
     .arrowTextWrapper {
       display: flex;
+      position: relative;
       flex-direction: row;
       align-self: center;
-      justify-content: space-evenly;
-      width: 150px;
+      width: 100%;
       height: 50px;
       align-items: center;
-      margin: 0 0 30px 0;
+      text-align: center;
+      //  margin: 0 0 30px 0;
 
       > .gradeArrow {
         width: 25px;
@@ -58,11 +70,9 @@ $layout-breakpoint-small: 560px;
     }
 
     p {
-      color: #05395e;
-      font-weight: bold;
+      margin: 0 0 0 15px;
+      white-space: nowrap;
       padding: 0;
-      margin: 0;
-      text-decoration: underline;
     }
   }
 

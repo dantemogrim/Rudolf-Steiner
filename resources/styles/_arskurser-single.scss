@@ -11,7 +11,7 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 30px 0 30px 0;
   width: 85vw;
 }
@@ -21,10 +21,10 @@
 
   .singlePostThumbnail {
     border-radius: 50%;
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    transform: translate(-25%, -25%);
+    // position: absolute;
+    // top: 25%;
+    // left: 15%;
+    // transform: translate(-25%, -25%);
   }
 
   .singlePostHeading {
@@ -40,14 +40,14 @@
     height: auto;
     margin: 20px;
     padding: 0;
+    //display: none;
   }
 }
 
 .content {
   align-self: center;
   background-color: white;
-  border: 10px solid #c3d7b4;
-  border-radius: 4px;
+  //border: 10px solid #c3d7b4;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -63,4 +63,49 @@ a > button {
   color: white;
   margin: 20px 0 20px 0;
   padding: 5px 10px 5px 10px;
+}
+
+// Different colors for each grade.
+
+.firstGrade {
+  background-color: #f4dee4;
+  color: #345a79;
+
+  p {
+    color: #345a79;
+  }
+
+  .singlePostBlob,
+  .singleArrow {
+    fill: #345a79;
+  }
+}
+
+.secondGrade {
+  background-color: #fdf6d1;
+  color: #375f75;
+
+  p {
+    color: #375f75;
+  }
+
+  svg,
+  g,
+  path {
+    fill: #375f75;
+  }
+}
+
+.thirdGrade {
+  background-color: #e0ebf2;
+  color: #2f5d7d;
+
+  p {
+    color: #2f5d7d;
+  }
+
+  svg,
+  path {
+    fill: #2f5d7d;
+  }
 }

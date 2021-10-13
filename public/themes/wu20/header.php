@@ -5,7 +5,9 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/dist/app.css') ?>">
-    <link rel="icon" href="<?= get_template_directory_uri(); ?>/images/favicon.png" type="image/gif">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22
+    width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22
+    dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🌱</text></svg>" />
     <?php wp_head(); ?>
 </head>
 
@@ -18,7 +20,7 @@
         <nav>
 
             <a class="brandHomeLink" href="<?= get_home_url(); ?>">
-                <img class="brand" src="<?= get_template_directory_uri(); ?>/icons/logoAndText.svg" />
+                <img class="brand" src="<?= get_template_directory_uri(); ?>/icons/logo-with-text.svg" />
             </a>
 
             <button class="applyButtonBrand" type="button">
@@ -85,5 +87,4 @@
 
     </div>
     </nav>
-    <main>
-        <div class="frontPagePattern">
+    <main role="main">
