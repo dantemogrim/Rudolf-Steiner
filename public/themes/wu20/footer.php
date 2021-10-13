@@ -1,8 +1,6 @@
+</div>
 </main>
-<script src="<?= get_theme_file_uri('assets/dist/app.js') ?>" async></script>
-<script src="<?= get_theme_file_uri('assets/dist/nav.js') ?>" async></script>
 <?php wp_footer(); ?>
-
 <footer>
     <h1 class="footerTextOrange footer-name">RUDOLF STEINERSKOLAN GÖTEBORG</h1>
     <div class="contact">
@@ -27,7 +25,6 @@
 
             <img class="social" src="<?= get_template_directory_uri(); ?>/icons/instagram.svg" />
 
-
             <img class="social" src="<?= get_template_directory_uri(); ?>/icons/facebook.svg" />
 
             <img class="social" src="<?= get_template_directory_uri(); ?>/icons/youtube.svg" />
@@ -36,9 +33,8 @@
     </div>
 
 </footer>
-</div>
-
-</div>
+<script src="<?= get_theme_file_uri('assets/dist/app.js') ?>" async></script>
+<script src="<?= get_theme_file_uri('assets/dist/nav.js') ?>" async></script>
 </body>
 
 </html>

@@ -21,6 +21,10 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('style', get_stylesheet_uri());
 });
 
+add_filter('excerpt_length', function ($length) {
+    return 30;
+}, PHP_INT_MAX);
+
 
 // Register Staff as a custom post type.
 require get_template_directory() . '/post-types/argument.php';

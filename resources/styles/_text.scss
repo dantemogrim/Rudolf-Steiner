@@ -44,6 +44,10 @@ button {
   }
 }
 
+.intranetLinkHeader {
+  text-decoration: underline;
+}
+
 $layout-breakpoint-small: 560px;
 
 @media (max-width: $layout-breakpoint-small) {

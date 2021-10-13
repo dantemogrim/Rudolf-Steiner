@@ -1,5 +1,6 @@
 .blobAndHeadingWrapper {
   position: relative;
+  text-align: center;
 
   .greenBlobDesktop {
     width: 100vw;
@@ -13,9 +14,9 @@
   h2 {
     font-size: 35px;
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
   }
   p {
     position: absolute;
@@ -25,26 +26,112 @@
   }
 }
 
-.container {
+// Holds all cards.
+.cardContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  width: 100vw;
+  height: auto;
+  justify-content: space-evenly;
 }
 
 .singleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: relative;
+  max-width: 350px;
+  height: 550px;
   text-align: center;
-  flex: 1 30%;
-  margin: 20px 10px 20px 10px;
+  flex-grow: 1;
+  flex-basis: 30%;
+  margin: 30px 60px 30px 60px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.arrowTextWrapper {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 15px 0;
+
+  p {
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
+}
+
+.cardThumbnail {
+  width: 300px;
+  height: 255px;
+  border-radius: 6px;
+  margin: 20px 0 20px 0;
 }
 
 .textWrapper {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   > h4 {
     font-size: 35px;
   }
+}
+
+.excerpt {
+  width: 300px;
+  height: auto;
+}
+
+// Shifting background colors.
+.singleCard:nth-child(1) {
+  background-color: #f4dee4;
+  color: #345a79;
+}
+
+.singleCard:nth-child(2) {
+  background-color: #fdf6d1;
+  color: #375f75;
+}
+
+.singleCard:nth-child(3) {
+  background-color: #e0ebf2;
+  color: #2f5d7d;
+}
+
+.singleCard:nth-child(4) {
+  background-color: #e3f5d6;
+  color: #325f76;
+}
+
+.singleCard:nth-child(5) {
+  background-color: #ffd08e;
+  color: #425f6a;
+}
+
+.singleCard:nth-child(6) {
+  background-color: #2f698d;
+  color: #d5e1e8;
+}
+
+.singleCard:nth-child(7) {
+  background-color: #b64259;
+  color: #ecd5de;
+}
+
+.singleCard:nth-child(8) {
+  background-color: #7c3d77;
+  color: #e1d4e4;
+}
+
+.singleCard:nth-child(9) {
+  background-color: #05395e;
+  color: #c9d3df;
 }

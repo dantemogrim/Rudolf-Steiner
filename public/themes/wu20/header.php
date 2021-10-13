@@ -86,3 +86,4 @@
     </div>
     </nav>
     <main>
+        <div class="frontPagePattern">

@@ -3,21 +3,20 @@
 
 <?php the_content(); ?>
 
-<main role="main">
+<?php
+$args = [
+    'numberposts' => 1,
+    'order' => 'desc',
+];
 
-    <?php
-    $args = [
-        'numberposts' => 1,
-        'order' => 'desc',
-    ];
+$latestPosts = get_posts($args);
+?>
 
-    $latestPosts = get_posts($args);
-    ?>
-
-    <?php foreach ($latestPosts as $post) : setup_postdata($post); ?>
+<?php foreach ($latestPosts as $post) : setup_postdata($post); ?>
 
 
-    <?php endforeach; ?>
+<?php endforeach; ?>
 
 
-</main <?php get_footer(); ?>
+
+<?php get_footer(); ?>
