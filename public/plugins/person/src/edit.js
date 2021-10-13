@@ -69,7 +69,7 @@ export default function Edit({ media, attributes, setAttributes }) {
 	}
 	const changeColorHandler = (e) => {
 		const value = e.currentTarget.value;
-		if(value === 'blue' || value === 'yellow' || value === 'green') {
+		if(value === 'red' || value === 'yellow' || value === 'green') {
 			setAttributes({
 				color: value
 			})
@@ -88,9 +88,9 @@ console.log(value)
 		bgClass = 'person_bgYellow'
 		nameClass = 'person_nameYellow'
 	} 
-	if(attributes.color === 'blue') {
-		bgClass = 'person_bgBlue'
-		nameClass = 'person_nameBlue'
+	if(attributes.color === 'red') {
+		bgClass = 'person_bgRed'
+		nameClass = 'person_nameRed'
 	} 
 
 	return (
@@ -135,7 +135,7 @@ console.log(value)
 					title='Chose color'
 					initialOpen={ true }
 					>
-				<input onChange={changeColorHandler} placeholder='blue | green | yellow' defaultValue={attributes.color}/>
+				<input onChange={changeColorHandler} placeholder='red | green | yellow' defaultValue={attributes.color}/>
 				</PanelBody>
 				<PanelBody>
 					<p>Invert</p>

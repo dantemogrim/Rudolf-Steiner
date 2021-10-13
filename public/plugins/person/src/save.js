@@ -33,9 +33,9 @@ export default function save({ attributes }) {
 		bgClass = 'person_bgYellow'
 		nameClass = 'person_nameYellow'
 	} 
-	if(attributes.color === 'blue') {
-		bgClass = 'person_bgBlue'
-		nameClass = 'person_nameBlue'
+	if(attributes.color === 'red') {
+		bgClass = 'person_bgRed'
+		nameClass = 'person_nameRed'
 	} 
 
 	return (

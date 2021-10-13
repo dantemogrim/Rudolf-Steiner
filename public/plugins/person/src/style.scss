@@ -30,7 +30,7 @@
 }
 
 .outerContainer {
-	width: 1200px !important;
+	width: 1330px !important;
 }
 
 .outerOuterContainer {
@@ -69,12 +69,13 @@
 
 .textRightContainer {
 	width: 520px;
+	max-width: initial !important;
 	@media (max-width: 650px) {
 		flex-direction: column-reverse !important;
 	}
 	@media (min-width: 650px) {
-		padding: 6rem 3rem;
-		margin-right: -5rem;
+		padding: 7rem 6rem 6rem 6rem !important;
+		margin-right: -7rem;
 		padding-right: 6rem;
 	 }
 }
@@ -100,7 +101,7 @@
 		margin-top: -8rem;
 		max-width: calc(100% - var(--person_padding));
 	}
-	max-width: calc(100% - var(--blockHeight) + var(--person_padding));
+	// max-width: calc(100% - var(--blockHeight) + var(--person_padding));
 	.lowerText {
 		color: #BF4B62;
 		margin: 0;
@@ -110,7 +111,7 @@
 	}
 	.upperText {
 		@media (min-width:650px) {
-			width: 240px;
+			width: 322px;
 		}
 		@media (max-width: 650px) {
 			text-align: center;
@@ -137,12 +138,11 @@
 	 }
 }
 
-.person_nameBlue {
+.person_nameRed {
 	color: #BF4B62 !important;
 }
-.person_bgBlue {
-	background: #E0EBF2 !important;
-
+.person_bgRed {
+	background: #F6E9EF !important;
 }
 .person_nameYellow {
 	color: #BF4B62 !important;

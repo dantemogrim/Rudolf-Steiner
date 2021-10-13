@@ -103,7 +103,7 @@ function Edit({
   const changeColorHandler = e => {
     const value = e.currentTarget.value;
 
-    if (value === 'blue' || value === 'yellow' || value === 'green') {
+    if (value === 'red' || value === 'yellow' || value === 'green') {
       setAttributes({
         color: value
       });
@@ -126,9 +126,9 @@ function Edit({
     nameClass = 'person_nameYellow';
   }
 
-  if (attributes.color === 'blue') {
-    bgClass = 'person_bgBlue';
-    nameClass = 'person_nameBlue';
+  if (attributes.color === 'red') {
+    bgClass = 'person_bgRed';
+    nameClass = 'person_nameRed';
   }
 
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
@@ -158,7 +158,7 @@ function Edit({
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     onChange: changeColorHandler,
-    placeholder: "blue | green | yellow",
+    placeholder: "red | green | yellow",
     defaultValue: attributes.color
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Invert"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     checked: attributes.inverted,
@@ -348,9 +348,9 @@ function save({
     nameClass = 'person_nameYellow';
   }
 
-  if (attributes.color === 'blue') {
-    bgClass = 'person_bgBlue';
-    nameClass = 'person_nameBlue';
+  if (attributes.color === 'red') {
+    bgClass = 'person_bgRed';
+    nameClass = 'person_nameRed';
   }
 
   return attributes.inverted ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
