@@ -14,12 +14,55 @@ $layout-breakpoint-small: 560px;
       height: auto;
     }
 
-    .textWrapper > h2 {
+    h2 {
       position: absolute;
-      font-size: 20px;
-      top: 25%;
+      font-size: 35px;
+      top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .singleCard {
+    flex: 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 10px 0 10px;
+    width: 350px;
+    height: 370px;
+    border-radius: 8px;
+
+    img {
+      border-radius: 8px;
+    }
+
+    .arrowTextWrapper {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      justify-content: space-evenly;
+      width: 150px;
+      height: 50px;
+      align-items: center;
+      margin: 0 0 30px 0;
+
+      > .gradeArrow {
+        width: 25px;
+        height: auto;
+      }
+    }
+
+    p {
+      color: #05395e;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      text-decoration: underline;
     }
   }
 

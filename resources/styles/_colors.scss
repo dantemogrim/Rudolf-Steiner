@@ -7,6 +7,7 @@ $blobBackgroundLightYellow: #fcf8e3;
 $buttonBlue: #2f698d;
 $footerBlue: #05395e;
 $footerTextGreen: #c3d7b4;
+$footerTextOrange: #ffd08e;
 $menuMainLinkBlue: #e0ebf2;
 $menuMainLinkGreen: #e2f5d6;
 $menuMainLinkRed: #f4dee4;
@@ -57,8 +58,8 @@ footer {
   background-color: $footerBlue;
 }
 
-.footerTextGreen {
-  color: $footerTextGreen;
+.footerTextOrange {
+  color: $footerTextOrange;
 }
 
 .primaryLinks,

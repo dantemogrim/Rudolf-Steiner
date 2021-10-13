@@ -10,7 +10,7 @@
     <p class="underrubrik">I waldorfskolan finns en tydlig rytm, en dags-, vecko- och årsrytm. Ett exempel är de återkommande månadsfesterna där eleverna visar upp för varandra vad de arbetat med i sina respektive klasser.</p>
 </div>
 
-<div class="container">
+<div class="cardContainer">
     <?php
 
     $args = [
@@ -28,21 +28,24 @@
         <?php foreach ($argumenten as $post) : setup_postdata($post); ?>
 
             <div class="singleCard">
-                <div class="desktopCard">
-                    <a href="<?php the_permalink(); ?>">
 
-                        <?php if (has_post_thumbnail()) {
-                            the_post_thumbnail('medium');
-                        } ?>
-                        <div class="textWrapper">
-                            <h4><?php the_title(); ?></h4>
-                            <p>Läs mer</p>
-                        </div>
-                    </a>
-                    <div class="excerpt">
-                        <?php the_excerpt(); ?>
+                <a href="<?php the_permalink(); ?>">
+
+                    <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail('medium', array('class' => 'cardThumbnail'));
+                    } ?>
+                    <div class="textWrapper">
+                        <h4><?php the_title(); ?></h4>
                     </div>
+                </a>
+                <div class="excerpt">
+                    <?php the_excerpt(); ?>
                 </div>
+                <div class="arrowTextWrapper">
+                    <img class="gradeArrow" src="<?= get_template_directory_uri(); ?>/icons/arrow.svg" />
+                    <p>Läs mer här</p>
+                </div>
+
             </div>
 
         <?php endforeach; ?>
