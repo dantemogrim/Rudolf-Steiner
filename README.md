@@ -134,6 +134,13 @@ _**Optional: In Settings -> General.**_
 
 ## :man_technologist: Creators
 
+<u>Digital Design</u>:
+
+- Hanna Chronholm
+- Tom-Christian Stokka
+
+<u>Web Development</u>:
+
 - [Dante Mogrim](https://github.com/dantemogrim)
 - [Erik White](https://github.com/nausea87)
 - [Hugo Sundberg](https://github.com/Hugocsundberg)

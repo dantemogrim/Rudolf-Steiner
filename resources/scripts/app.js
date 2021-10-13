@@ -44,9 +44,9 @@ singlePostCard.forEach((grade) => {
   }
 
   if (window.location.href.indexOf("arskurs-8") > -1) {
-    grade.classList.add("eigthGrade");
+    grade.classList.add("eighthGrade");
   } else {
-    grade.classList.remove("eigthGrade");
+    grade.classList.remove("eighthGrade");
   }
 
   if (window.location.href.indexOf("arskurs-9") > -1) {
