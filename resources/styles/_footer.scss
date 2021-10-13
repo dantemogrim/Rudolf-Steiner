@@ -1,11 +1,12 @@
 footer {
-  // height: 100%;
-  padding: 100px;
+  height: 88vh;
+  padding: 30px;
 
   .footer-name {
     padding: 50px;
   }
   .contact {
+    font-size: 1.4rem;
     letter-spacing: 0.3px;
     padding: 20px;
   }
@@ -13,8 +14,9 @@ footer {
   .bottom {
     margin-top: 40px;
     .idun-login {
+      font-family: "Poppins";
       color: white;
-      font-weight: 200;
+      font-weight: 100;
       font-size: larger;
       text-decoration: underline;
       display: flex;
@@ -35,7 +37,7 @@ footer {
       align-items: center;
 
       .social {
-        width: 50px;
+        width: 60px;
         margin: 10px;
         cursor: pointer;
       }
