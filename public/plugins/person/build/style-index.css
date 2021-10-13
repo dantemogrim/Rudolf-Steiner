@@ -23,6 +23,7 @@
   margin-bottom: -1rem;
   gap: var(--person_padding);
   justify-content: center;
+  transition: 1s;
 }
 @media (max-width: 650px) {
   .flexContainerNew {
@@ -31,6 +32,11 @@
     text-align: center;
   }
 }
+.flexContainerNew:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.238));
+}
+
 .outerContainer {
   width: 1330px !important;
 }
@@ -109,6 +115,7 @@
   z-index: 1 !important;
   padding: 7rem 4rem;
   padding-top: 136px;
+  box-shadow: 5px 5px -5px 10px black;
 }
 @media (max-width: 650px) {
   .textContainer {
