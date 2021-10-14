@@ -23,11 +23,9 @@
                         </g>
                     </svg>
 
-
                 </div>
 
                 <div class="content"><?php the_content(); ?></div>
-
 
                 <a href="#">
                     <div class="singleArrowTextWrapper">

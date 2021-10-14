@@ -1,0 +1,126 @@
+// Shifting background colors.
+.singleCard:nth-child(1) {
+  background-color: #f4dee4;
+  color: #345a79;
+
+  p {
+    color: #345a79;
+  }
+
+  svg,
+  path {
+    fill: #345a79;
+  }
+}
+
+.singleCard:nth-child(2) {
+  background-color: #fdf6d1;
+  color: #375f75;
+
+  p {
+    color: #375f75;
+  }
+
+  svg,
+  path {
+    fill: #375f75;
+  }
+}
+
+.singleCard:nth-child(3) {
+  background-color: #e0ebf2;
+  color: #2f5d7d;
+
+  p {
+    color: #2f5d7d;
+  }
+
+  svg,
+  path {
+    fill: #2f5d7d;
+  }
+}
+
+.singleCard:nth-child(4) {
+  background-color: #e3f5d6;
+  color: #325f76;
+
+  p {
+    color: #325f76;
+  }
+
+  svg,
+  path {
+    fill: #325f76;
+  }
+}
+
+.singleCard:nth-child(5) {
+  background-color: #ffd08e;
+  color: #425f6a;
+
+  p {
+    color: #425f6a;
+  }
+
+  svg,
+  path {
+    fill: #425f6a;
+  }
+}
+
+.singleCard:nth-child(6) {
+  background-color: #2f698d;
+  color: #d5e1e8;
+
+  p {
+    color: #d5e1e8;
+  }
+
+  svg,
+  path {
+    fill: #d5e1e8;
+  }
+}
+
+.singleCard:nth-child(7) {
+  background-color: #b64259;
+  color: #ecd5de;
+
+  p {
+    color: #ecd5de;
+  }
+
+  svg,
+  path {
+    fill: #ecd5de;
+  }
+}
+
+.singleCard:nth-child(8) {
+  background-color: #7c3d77;
+  color: #e1d4e4;
+
+  p {
+    color: #e1d4e4;
+  }
+
+  svg,
+  path {
+    fill: #e1d4e4;
+  }
+}
+
+.singleCard:nth-child(9) {
+  background-color: #05395e;
+  color: #c9d3df;
+
+  p {
+    color: #c9d3df;
+  }
+
+  svg,
+  path {
+    fill: #c9d3df;
+  }
+}

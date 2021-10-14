@@ -12,8 +12,6 @@ footer {
   .bottom {
     margin-top: 40px;
     .idun-login {
-      font-family: "poppins";
-      color: white;
       font-weight: 100;
       font-size: larger;
       text-decoration: underline;
@@ -25,7 +23,6 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       font-weight: 100;
       font-size: normal;
     }
@@ -45,7 +42,6 @@ footer {
   li {
     list-style-type: none;
     font-weight: 200;
-    color: white;
     margin-top: 5px;
   }
 }
