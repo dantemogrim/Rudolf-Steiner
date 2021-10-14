@@ -11,3 +11,8 @@ body {
   background-repeat: repeat;
   background-size: contain;
 }
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
