@@ -48,6 +48,13 @@ button {
   text-decoration: underline;
 }
 
+.idun-login {
+  font-family: "poppins";
+  font-weight: 100;
+  font-size: larger;
+  text-decoration: underline;
+}
+
 $layout-breakpoint-small: 560px;
 
 @media (max-width: $layout-breakpoint-small) {

@@ -11,12 +11,12 @@
 	align-items: flex-start;
 	padding: 2rem;
 	margin-right: 2rem;
-    height: 100%;
-    background: white;
+	height: 100%;
+	background: white;
 	border-radius: 6px;
 	width: calc(100% - 5rem);
 	h2 {
-		color: #7C3D77;
+		color: #7c3d77;
 	}
 	@media (min-width: 700px) {
 		justify-content: space-between;
@@ -27,10 +27,10 @@
 }
 
 .outerDiv {
-	width: 104%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	background: #FDF6D1;
+	background: #fdf6d1;
 	@media (min-width: 700px) {
 		flex-direction: row;
 	}
@@ -38,18 +38,17 @@
 
 .argument_imageContainer {
 	padding: 2rem;
-    background: #FDF6D1;
+	background: #fdf6d1;
 }
 
 .argument_flex-div-container {
 	width: 100%;
-    margin-left: -70px;
+	margin-left: -70px;
 	padding: 3rem 0;
 	@media (max-width: 650px) {
 		width: calc(100% - 2rem);
-    	margin-left: 2rem;
+		margin-left: 2rem;
 	}
-	
 }
 
 .top-image {
@@ -85,7 +84,7 @@
 
 .blobDownYellowDesktop,
 .blobUpYellowDesktop {
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 
